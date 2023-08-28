@@ -1,14 +1,14 @@
 
-@import url('./reset.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./about-us.css');
-@import url('./lessons.css');
-@import url('./proposal.css');
-@import url('./teachers.css');
-@import url('./leave.css');
-@import url('./reviews.css');
-@import url('./footer.css');
+@import url('base/reset.css');
+@import url('layout/header.css');
+@import url('components/hero.css');
+@import url('components/about-us.css');
+@import url('components/lessons.css');
+@import url('components/proposal.css');
+@import url('components/teachers.css');
+@import url('components/leave.css');
+@import url('components/reviews.css');
+@import url('layout/footer.css');
 
 :root {
   font-family: 'Manrope', sans-serif;
