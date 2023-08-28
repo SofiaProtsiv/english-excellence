@@ -7,7 +7,7 @@
 /* Components */
 @import url('components/hero.css');
 @import url('components/about-us.css');
-@import url('components/lessons.css');
+@import url('./components/lessons.css');
 @import url('components/proposal.css');
 @import url('components/teachers.css');
 @import url('components/leave.css');
