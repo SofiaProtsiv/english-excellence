@@ -1,0 +1,9 @@
+:root { /* Section */
+  --section-padding-bottom-mobile: 80px;
+  --section-padding-bottom-tablet: 100px;
+  --section-padding-bottom-desktop: 150px;
+
+  --section-about-padding-top-mobile: 80px;
+  --section-about-padding-top-tablet: 100px;
+  --section-about-padding-top-desktop: 96px;
+}
