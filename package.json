@@ -1,18 +1,18 @@
 {
-  "name": "vanilla-app-template",
+  "name": "english-excellence",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://sofiaprotsiv.github.io/english-excellence/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/english-excellence/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.0.5",
     "glob": "^8.1.0"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
