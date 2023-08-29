@@ -12,6 +12,7 @@
 @import url('components/teachers.css');
 @import url('components/leave.css');
 @import url('components/reviews.css');
+@import url('components/team.css');
 
 /* Layouts */
 @import url('layout/header.css');
