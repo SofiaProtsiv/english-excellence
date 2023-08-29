@@ -1,0 +1,8 @@
+.about-us_list {
+  counter-reset: customCounter;
+}
+
+.about-us_item::before {
+  content: counter(customCounter, decimal-leading-zero);
+  counter-increment: customCounter;
+}
