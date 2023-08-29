@@ -1,11 +1,11 @@
-.section-lesson {
+.section-lessons {
   padding-top: 150px;
   padding-left: 40px;
   padding-right: 40px;
 }
 
 @media(max-width:900px) {
-  .section-lesson {
+  .section-lessons {
     padding-left: 20px;
     padding-right: 20px;
   }
