@@ -21,6 +21,7 @@
 /* Sections & Containers */
 @import url('utils/section.css');
 @import url('utils/container.css');
+@import url('utils/title.css');
 
 
 :root {
