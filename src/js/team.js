@@ -8,7 +8,7 @@ function addTeam() {
 
   const { iconGithub, iconEmail, iconLinkedin } = icons;
 
-  team.forEach(({ name, role, desc, photo, website, email, linkedin }) => {
+  team.forEach(({ name, role, desc, photo, github, email, linkedin }) => {
 
     const template = `
     <div class="swiper-slide">
@@ -24,7 +24,7 @@ function addTeam() {
         <div class="social">
           <span class="pointer"></span>
           <div class="icons">
-            <a class="icon" href="${website}" target="_blank" data-index="0"><img src="${iconGithub}"></a>
+            <a class="icon" href="${github}" target="_blank" data-index="0"><img src="${iconGithub}"></a>
             <a class="icon" href="${email}" target="_blank" data-index="1"><img src="${iconEmail}"></a>
             <a class="icon" href="${linkedin}" target="_blank" data-index="2"><img src="${iconLinkedin}"></a>
           </div>
