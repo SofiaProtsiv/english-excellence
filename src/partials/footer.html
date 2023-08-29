@@ -1,143 +1,277 @@
-<!-- FOOTER -->
-<footer class="footer" role="contentinfo">
-  <div class="footer-container container">
-    <div class="footer-logo-tel-address">
-      <a class="logotype link" href="./index.html">
-        <div class="logotype-wrapper">
-          english<span class="logotype-right-accent">excellence</span>
+   <style>
+.link {
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/Manrope-Regular.woff2') format('woff2'),
+        url('fonts/Manrope-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.footer {
+    background-color: #121417;
+}
+
+/* The main container for the footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+    color: #FFFFFF;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    border-bottom: 1px rgba(255, 255, 255, 0.10);
+
+}
+
+.logotype {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logotype-right-accent {
+    color: #4DC274;
+}
+
+.footer-contact-list-item {
+    display: flex;
+    flex-direction: column;
+    color: var(--activity-bar-inactive-foreground, rgba(255, 255, 255, 0.60));
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+}
+
+.label,
+.value {
+    display: block;
+}
+
+.footer-contact-list-item a {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.29;
+    text-decoration: none;
+}
+
+
+.social-media-link {
+    padding: 8px;
+    border: ;
+}
+
+
+/* The first column containing the logo and contact info */
+/* .footer-logo-tel-address { */
+/* flex: 1; */
+/* } */
+
+/* The second column containing menu items */
+/* .footer-menu { */
+/* flex: 1; */
+/* } */
+
+.footer-menu-list {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+/* The third column containing social media icons */
+.footer-social-media {
+    /* flex: 1; */
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    gap: 8px;
+
+}
+
+.social-media-contacts-list {
+    list-style: none;
+    /* padding-left: 0; */
+    display: flex;
+
+}
+
+.social-contact-icon {
+    opacity: 0.8;
+    border-radius: 10px;
+    border: 1px solid var(--menubar-selection-background, rgba(255, 255, 255,
+0.10));
+}
+
+
+
+
+
+
+/* For the footer line and copyright and terms */
+.copyright-privacy-terms {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo-tel-address,
+.footer-menu,
+.footer-social-media {
+    flex: 1;
+    flex-basis: calc(33.333% - 10px);
+    flex-shrink: 0;
+}
+
+.footer-contact-list,
+.footer-menu-list,
+.social-media-contacts-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media-contacts-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.copyright-privacy-terms {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    text-align: left;
+    text-align: right;
+
+}
+   </style>
+
+   <footer class="footer" role="contentinfo">
+      <div class="footer-container container">
+        <div class="footer-logo-tel-address">
+          <a class="logotype link" href="./index.html">
+            <div class="logotype-wrapper">
+              english<span class="logotype-right-accent">excellence</span>.
+            </div>
+          </a>
+          <address>
+            <ul class="footer-contact-list list">
+              <li class="footer-contact-list-item">
+                <span class="label">Phone number:</span>
+                <span class="value">
+                <a href="tel:+380684439426" aria-label="Phone number +380 (68) 443-94-26" rel="noopener noreferrer">
+                 +380 (68) 443-94-26
+                </a>
+                </span>
+              </li>
+              <li class="footer-contact-list-item">
+                <span class="label">Address:</span>
+                <span class="value">
+                  <a href="https://www.google.com/maps?q=32a+M.+Bazhana+ave" target="_blank" rel="noopener noreferrer">
+                  32a M. Bazhana ave
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </address>
         </div>
-      </a>
 
-      <address>
-        <ul class="footer-contact-list list">
-          <li class="footer-contact-list-item">
-            <span class="label">Phone number:</span>
-            <span class="value">
+        <div class="footer-menu">
+          <ul class="footer-menu-list list">
+            <li class="footer-menu-list-item"><a class="link" href="#about-us">About us</a></li>
+            <li class="footer-menu-list-item"><a class="link" href="#our-lessons">Our lessons</a></li>
+            <li class="footer-menu-list-item"><a class="link"href="#teachers.">Teachers</a></li>
+            <li class="footer-menu-list-item"><a class="link" href="#reviews">Reviews</a></li>
+            <li class="footer-menu-list-item"><a class="link" href="#contact-us">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-media">
+          <ul class="social-media-contacts-list list">
+            <li class="social-media-contact-item">
+             <a
+               class="social-media-link image-btn"
+               href=""
+               target="_blank"
+               rel="noopener noreferrer">
+               <svg
+                 class="social-contact-icon"
+                 width="28"
+                 height="28"
+                 aria-label="Facebook icon">
+                 <use href="../public/icons.svg#icon-facebook"></use>
+               </svg>
+             </a>
+           </li>
+            <li class="social-media-contact-item">
               <a
-                href="tel:+380684439426"
-                aria-label="Phone number +380 (6
-26"
-                rel="noopener noreferrer"
-              >
-                +380 (68) 443-94-26
-              </a>
-            </span>
-          </li>
-          <li class="footer-contact-list-item">
-            <span class="label">Address:</span>
-            <span class="value">
-              <a
-                href="https://www.google.com/maps?q=32a+M.+Bazhana+ave"
+                class="social-media-link image-btn"
+                href=""
                 target="_blank"
-                rel="noopener noreferrer"
-              >
-                32a M. Bazhana ave
+                rel="noopener noreferrer">
+                <svg
+                  class="social-contact-icon"
+                  width="28"
+                  height="28"
+                  aria-label="Instagram icon">
+                  <use href="../public/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
-            </span>
-          </li>
-        </ul>
-      </address>
+            </li>
 
-      <div class="footer-menu">
-        <ul class="footer-menu-list list">
-          <li class="footer-menu-list-item">
-            <a
-              class="link"
-              href="
-us"
-              >About us</a
-            >
-          </li>
-          <li class="footer-menu-list-item">
-            <a
-              class="link"
-              href="
-lessons"
-              >Our lessons</a
-            >
-          </li>
-          <li class="footer-menu-list-item">
-            <a class="link" href="#teachers.">Teachers</a>
-          </li>
-          <li class="footer-menu-list-item">
-            <a class="link" href="#reviews">Reviews</a>
-          </li>
-          <li class="footer-menu-list-item">
-            <a
-              class="link"
-              href="
-us"
-              >Contact us</a
-            >
-          </li>
-        </ul>
+            <li class="social-media-contact-item">
+              <a
+                class="social-media-link image-btn "
+                href=""
+                target="_blank"
+                rel="noopener noreferrer">
+                <svg
+                  class="social-contact-icon"
+                  width="28"
+                  height="28"
+                  aria-label="Youtube icon">
+                  <use href="../public/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-social-media">
-        <ul class="social-media-contacts-list list">
-          <li class="social-media-contact-item">
-            <a
-              class="social-media-link image-btn"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                class="social-contact-icon"
-                width="28"
-                height="28"
-                aria-label="Twitter icon"
-              >
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-media-contact-item">
-            <a
-              class="social-media-link image-btn"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                class="social-contact-icon"
-                width="28"
-                height="28"
-                aria-label="Instagram icon"
-              >
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
+      <div class="copyright-privacy-terms">
+        <div class="footer-left">
+         <small>&copy; 2023  English Excellence. All rights reserved.</small>
+       </div>
 
-          <li class="social-media-contact-item">
-            <a
-              class="social-media-link image-btn"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                class="social-contact-icon"
-                width="28"
-                height="28"
-                aria-label="Facebook icon"
-              >
-                <use href="./images/icons.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright-privacy-terms">
-      <div class="footer-left">
-        <small>&copy; 2023 English Excellence. All rights reserved.</small>
-      </div>
-
-      <div class="footer-right">
+       <div class="footer-right">
         <a class="link" href="#">Privacy Policy</a>
         <a class="link" href="#">Terms of Service</a>
       </div>
-    </div>
-  </div>
 </footer>
+
