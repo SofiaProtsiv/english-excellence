@@ -31,8 +31,8 @@
   --desktop: 1280px;
 
   /* Transition properties */
-  --time: 250ms;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-time: 250ms;
+  --transition-effect: cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Backdrop */
   --background-color: rgba(18, 20, 23, 0.4);
