@@ -1,10 +1,10 @@
 <section class="section">
   <div class="container">
-    <h2>
+    <h2 class="section_title">
       Leave an &nbsp;
-      <span> application </span>
+      <span class="section_title_span"> application </span>
     </h2>
-    <p>
+    <p class="leave-section-title-descr">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
@@ -19,28 +19,55 @@
         </p>
       </div>
       <form method="post">
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <input type="tel" placeholder="Phone" />
-        <textarea name="comment" id="comment" placeholder="Comment"></textarea>
-        <fieldset>
-          <legend>Choose a teacher</legend>
-          <label>
-            <input type="radio" name="teacher" value="maria" checked />
-            Maria
-          </label>
-          <label>
-            <input type="radio" name="teacher" value="artem" />
-            Artem
-          </label>
-          <label>
-            <input type="radio" name="teacher" value="ilona" />
-            Ilona
-          </label>
-          <label>
-            <input type="radio" name="teacher" value="volodymyr" />
-            Volodymyr
-          </label>
+        <input class="leave-section-input" type="text" placeholder="Name" />
+        <input class="leave-section-input" type="email" placeholder="Email" />
+        <input class="leave-section-input" type="tel" placeholder="Phone" />
+        <textarea
+          class="leave-section-textarea"
+          name="comment"
+          id="comment"
+          placeholder="Comment"
+        ></textarea>
+        <fieldset class="leave-content-rb-fieldset">
+          <legend class="leave-section-rb-title">Choose a teacher</legend>
+          <!-- <div class="leave-content-rb-group">
+            <div class="leave-section-rb-wrap">
+              <input
+                class="leave-section-rb-input visually-hidden"
+                type="radio"
+                name="teacher"
+                value="true"
+                id="maria"
+              />
+              <label class="leave-section-rb-wrap-label" for="maria">
+                <span class="leave-section-rb-wrap-span">
+                  <svg class="icon" width="18" height="18">
+                    <use
+                      href="english-excellence/assets/team/icons/email.svg"
+                    ></use>
+                  </svg>
+                </span>
+                Maria
+              </label>
+            </div> -->
+
+            <label>
+              <input type="radio" name="teacher" value="maria" checked />
+              Maria
+            </label>
+            <label>
+              <input type="radio" name="teacher" value="artem" />
+              Artem
+            </label>
+            <label>
+              <input type="radio" name="teacher" value="ilona" />
+              Ilona
+            </label>
+            <label>
+              <input type="radio" name="teacher" value="volodymyr" />
+              Volodymyr
+            </label>
+          </div>
         </fieldset>
         <button class="leave-section-btn" type="submit">Send</button>
         <p class="leave-section-btn-descr">

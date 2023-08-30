@@ -1,0 +1,110 @@
+.leave-section-adv-box {
+  display: none;
+}
+
+.leave-section-title-descr {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.leave-section-input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--input-border-color);
+  padding: 16px 18px;
+  color: var(--primary-text-color);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 18px;
+  outline: none;
+}
+
+.leave-section-input:focus {
+  border-color: var(--accent-color);
+}
+
+.leave-section-textarea {
+  width: 100%;
+  height: 94px;
+  border-radius: 12px;
+  border: 1px solid var(--input-border-color);
+  padding: 16px 18px;
+  color: var(--primary-text-color);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 20px;
+  outline: none;
+  resize: none;
+}
+
+.leave-section-textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.leave-section-btn-descr {
+  color: var(--secondary-text-color);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.leave-section-btn {
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  border-radius: 12px;
+  background: var(--accent-color);
+  color: var(--white-color);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.leave-section-btn:hover,
+.leave-section-btn:focus {
+  background-color: #38ae5f;
+}
+
+.leave-content-rb-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+  margin: 0 0 40px 0;
+  border: none;
+}
+
+.leave-section-rb-title {
+  color: var(--primary-text-color);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.leave-content-rb-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
