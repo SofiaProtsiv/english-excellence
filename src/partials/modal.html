@@ -1,70 +1,92 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <div class="modal__wrapper">
-      <button class="button-close" type="button" data-modal-close>close</button>
-      <nav>
-        <ul class="modal__nav__list">
-          <li><a class="modal__nav__link" href="">About Us</a></li>
-          <li><a class="modal__nav__link" href="">Our Lessons</a></li>
-          <li><a class="modal__nav__link" href="">Teachers</a></li>
-          <li><a class="modal__nav__link" href="">Reviews</a></li>
-          <li><a class="modal__nav__link" href="">Contact us</a></li>
-        </ul>
-      </nav>
-      <ul class="modal__social__list">
-        <li class="">
-          <a
-            class="modal__social__link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
+    <div data-modal-close class="button-close">
+      <svg width="32" height="32" aria-label="Instagram icon">
+        <use href="/public/closeBTN.svg#closeNav"></use>
+      </svg>
+    </div>
+    <nav>
+      <ul class="modal__nav__list">
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#about-us"
+            >About Us</a
           >
-            <svg
-              class="social__icon"
-              width="28"
-              height="28"
-              aria-label="Facebook icon"
-            >
-              <use href="/public/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
         </li>
-        <li class="">
-          <a
-            class="modal__social__link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#lessons"
+            >Our Lessons</a
           >
-            <svg
-              class="social__icon"
-              width="28"
-              height="28"
-              aria-label="Instagram icon"
-            >
-              <use href="/public/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
         </li>
-
-        <li class="">
-          <a
-            class="modal__social__link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#teachers"
+            >Teachers</a
           >
-            <svg
-              class="social__icon"
-              width="28"
-              height="28"
-              aria-label="Youtube icon"
-            >
-              <use href="/public/icons.svg#icon-youtube"></use>
-            </svg>
-          </a>
+        </li>
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#reviews"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#leave"
+            >Contact us</a
+          >
         </li>
       </ul>
-    </div>
+    </nav>
+    <ul class="modal__social__list">
+      <li class="">
+        <a
+          class="modal__social__link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            class="modal__social__icon"
+            width="28"
+            height="28"
+            aria-label="Facebook icon"
+          >
+            <use href="/public/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="">
+        <a
+          class="modal__social__link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            class="modal__social__icon"
+            width="28"
+            height="28"
+            aria-label="Instagram icon"
+          >
+            <use href="/public/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="">
+        <a
+          class="modal__social__link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            class="modal__social__icon"
+            width="28"
+            height="28"
+            aria-label="Youtube icon"
+          >
+            <use href="/public/icons.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </div>

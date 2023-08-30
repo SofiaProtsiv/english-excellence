@@ -1,11 +1,11 @@
-.section_title {
+.section__title {
   margin-bottom: 16px;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.13;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #121417;
+  color: var(--primary-text-color);
 
   @media (768px <= width) {
     font-size: 40px;
@@ -13,11 +13,11 @@
   }
 }
 
-.section_title_span {
+.section__title--span {
   position: relative;
 }
 
-.section_title_span::after {
+.section__title--span::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -27,10 +27,10 @@
   z-index: -1;
 
   border-radius: 8px;
-  background-color: #BEE8CC;
+  background-color: var(--highlight-color);
 }
 
-.section_subtitle {
+.section__subtitle {
   margin: 0 auto 40px;
   font-size: 14px;
   font-weight: 400;
