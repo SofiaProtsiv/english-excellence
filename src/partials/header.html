@@ -1,3 +1,89 @@
 <header class="header">
-  <p>header</p>
+  <div class="container header__wrapper">
+    <div class="">
+      <p class="logo">english<span class="logo--accent">excellence</span>.</p>
+    </div>
+    <!-- Start desktop elements -->
+    <nav>
+      <ul class="header__nav__list">
+        <li><a class="nav__link" href="#about-us">About Us</a></li>
+        <li><a class="nav__link" href="#lessons">Our Lessons</a></li>
+        <li><a class="nav__link" href="#teachers">Teachers</a></li>
+        <li><a class="nav__link" href="#reviews">Reviews</a></li>
+        <li><a class="nav__link" href="#leave">Contact us</a></li>
+      </ul>
+    </nav>
+    <div>
+      <ul class="header__social__list">
+        <li class="">
+          <a
+            class="social__link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="social__icon"
+              width="28"
+              height="28"
+              aria-label="Facebook icon"
+            >
+              <use href="/public/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="">
+          <a
+            class="social__link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="social__icon"
+              width="28"
+              height="28"
+              aria-label="Instagram icon"
+            >
+              <use href="/public/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="">
+          <a
+            class="social__link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="social__icon"
+              width="28"
+              height="28"
+              aria-label="Youtube icon"
+            >
+              <use href="/public/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="toggle-switch">
+      <p>Light</p>
+      <span>
+        <label class="switch">
+          <input class="theme-switch" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </span>
+      <p>Dark</p>
+    </div>
+    <!-- start mobile/tablet elements -->
+    <div class="header__btn" data-modal-open type="button">
+      <svg width="32" height="32" aria-label="Instagram icon">
+        <use href="/public/Nav.svg#openNav"></use>
+      </svg>
+    </div>
+  </div>
 </header>
