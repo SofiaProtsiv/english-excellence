@@ -14,6 +14,11 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
 <symbol id="icon-facebook" viewBox="0 0 32 32">
 <path  opacity="0.8" d="M19.52 4.64c0.24 0 0.48 0 0.96 0v3.6c-0.24 0-0.72 0-1.2 0s-0.96 0-1.2 0.24c-0.24 0.24-0.24 0.48-0.24 1.040 0 0.48 0 0.8 0 1.28h2.64v3.040h-2.64v13.2h-4.080v-13.28h-2.16v-3.040h2.16v-1.040c0-1.76 0.24-3.040 0.72-3.6 0.72-1.040 2.16-1.52 4.32-1.52 0.24 0.080 0.48 0.080 0.72 0.080z"></path>
 </symbol>
+
+<symbol id="icon-agree" viewBox="0 0 40 32">
+<path fill="none" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6" d="M36 4l-22 24-10-10.909"></path>
+</symbol>
+
 </defs>
 </svg>
 
