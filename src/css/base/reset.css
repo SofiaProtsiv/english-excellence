@@ -38,3 +38,6 @@ img {
 .link {
   text-decoration: none;
 }
+body.is-hidden{
+  overflow: hidden;
+}

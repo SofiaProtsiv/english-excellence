@@ -13,6 +13,7 @@
 @import url('components/leave.css');
 @import url('components/reviews.css');
 @import url('components/team.css');
+@import url('components/modal.css');
 
 /* Layouts */
 @import url('layout/header.css');
