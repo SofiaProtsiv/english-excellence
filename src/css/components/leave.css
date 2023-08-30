@@ -83,7 +83,7 @@
   background-color: #38ae5f;
 }
 
-.leave-content-rb-fieldset {
+.leave-section-rb-fieldset {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -103,8 +103,31 @@
   margin-bottom: 14px;
 }
 
-.leave-content-rb-group {
+.leave-section-rd-box {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .leave-section-form {
+    padding: 0 102px;
+  }
+
+  .leave-section-btn {
+    padding: 16px 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .leave-section-btn-descr {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .leave-section-rb-fieldset {
+    gap: 16px;
+    margin-bottom: 32px;
+    border: none;
+  }
 }
