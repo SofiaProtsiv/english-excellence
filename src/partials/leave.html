@@ -1,5 +1,141 @@
-<section class='section'>
-  <div class='container'>
-    <p>leave</p>
+<section class="section leave-section">
+  <div class="container">
+    <h2 class="section_title">
+      Leave an
+      <span class="section_title_span"> application </span>
+    </h2>
+    <p class="section_subtitle">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="leave-content-group">
+      <div class="leave__adv-box">
+        <img src="/assets/img/leave/student.png" alt="Student" />
+
+        <p class="leave__abv-box__text-accent">1000</p>
+        <p class="leave__abv-box__text">
+          of our online English language lessons! This journey has been full of
+          discovery, growth and unforgettable moments, and we are happy to share
+          this joyful event with you.
+        </p>
+      </div>
+      <form class="leave-section-form" method="post">
+        <input class="leave-section-input" type="text" placeholder="Name" />
+        <input class="leave-section-input" type="email" placeholder="Email" />
+        <input class="leave-section-input" type="tel" placeholder="Phone" />
+        <textarea
+          class="leave-section-textarea"
+          name="comment"
+          id="comment"
+          placeholder="Comment"
+        ></textarea>
+        <fieldset class="leave-section-rb-fieldset">
+          <legend class="leave-section-rb-title">Choose a teacher</legend>
+          <div class="leave-section-rd-box">
+            <div>
+              <input
+                class="leave__radio-btn__input visually-hidden"
+                type="radio"
+                name="teacher"
+                id="maria"
+                value="maria"
+                checked
+              />
+              <label class="leave__radio-btn__label" for="maria">
+                <span class="leave__radio-btn__label__span">
+                  <div class="leave__radio-btn__icon-uncheck"></div>
+                  <svg
+                    class="leave__radio-btn__icon-check"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="/public/icons.svg#radio-btn"></use>
+                  </svg>
+                </span>
+                Maria
+              </label>
+            </div>
+            <div class="leave-section-rd-box">
+              <div>
+                <input
+                  class="leave__radio-btn__input visually-hidden"
+                  type="radio"
+                  name="teacher"
+                  id="artem"
+                  value="artem"
+                />
+                <label class="leave__radio-btn__label" for="artem">
+                  <span class="leave__radio-btn__label__span">
+                    <div class="leave__radio-btn__icon-uncheck"></div>
+                    <svg
+                      class="leave__radio-btn__icon-check"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="/public/icons.svg#radio-btn"></use>
+                    </svg>
+                  </span>
+                  Artem
+                </label>
+              </div>
+            </div>
+            <div class="leave-section-rd-box">
+              <div>
+                <input
+                  class="leave__radio-btn__input visually-hidden"
+                  type="radio"
+                  name="teacher"
+                  id="ilona"
+                  value="ilona"
+                />
+                <label class="leave__radio-btn__label" for="ilona">
+                  <span class="leave__radio-btn__label__span">
+                    <div class="leave__radio-btn__icon-uncheck"></div>
+                    <svg
+                      class="leave__radio-btn__icon-check"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="/public/icons.svg#radio-btn"></use>
+                    </svg>
+                  </span>
+                  Ilona
+                </label>
+              </div>
+            </div>
+            <div class="leave-section-rd-box">
+              <div>
+                <input
+                  class="leave__radio-btn__input visually-hidden"
+                  type="radio"
+                  name="teacher"
+                  id="volodymyr"
+                  value="volodymyr"
+                />
+                <label class="leave__radio-btn__label" for="volodymyr">
+                  <span class="leave__radio-btn__label__span">
+                    <div class="leave__radio-btn__icon-uncheck"></div>
+                    <svg
+                      class="leave__radio-btn__icon-check"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="/public/icons.svg#radio-btn"></use>
+                    </svg>
+                  </span>
+                  Volodymyr
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <button class="leave-section-btn" type="submit">Send</button>
+
+        <p class="leave-section-btn-descr">
+          By clicking on “Send” button, you agree to our Privacy Policy, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
+      </form>
+    </div>
   </div>
 </section>
