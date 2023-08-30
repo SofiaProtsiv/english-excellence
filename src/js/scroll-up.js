@@ -20,5 +20,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-window.addEventListener('scroll', _.throttle(scrollFunction, 300));
+// window.addEventListener('scroll', _.throttle(scrollFunction, 300));
+window.addEventListener('scroll', scrollFunction);
 scrollUpButton.addEventListener('click', topFunction);
