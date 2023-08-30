@@ -1,4 +1,4 @@
-import { team, icons } from '../assets/team/db';
+import { team, icons } from '../assets/db';
 
 /* Team markup */
 const swiperWrapper = document.querySelector('.swiper-wrapper');
