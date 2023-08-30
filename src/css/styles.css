@@ -13,6 +13,9 @@
 @import url('components/leave.css');
 @import url('components/reviews.css');
 @import url('components/team.css');
+@import url('components/modal.css');
+@import url('components/switch-theme.css');
+@import url('components/scroll-up.css');
 
 /* Layouts */
 @import url('layout/header.css');
@@ -21,7 +24,7 @@
 /* Sections & Containers */
 @import url('utils/section.css');
 @import url('utils/container.css');
-
+@import url('utils/title.css');
 
 :root {
   font-family: 'Manrope', sans-serif;
@@ -29,7 +32,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
+  color: var(--primary-text-color);
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -37,4 +40,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }

@@ -8,7 +8,7 @@
   }
 }
 
-.title {
+.team-title {
   text-align: center;
   margin-bottom: 16px;
   color: var(--primary-text-color);
@@ -16,10 +16,10 @@
   font-weight: 700;
   line-height: 1.17;
 }
-.title > span {
+.team-title > span {
   position: relative;
 }
-.title > span:before {
+.team-title > span:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -30,25 +30,26 @@
   z-index: -1;
 }
 @media screen and (max-width: 767px) {
-  .title:before {
+  .team-title:before {
     height: 5px;
     bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .title {
+  .team-title {
     font-size: 32px;
   }
-}.subtitle{
-      color: var(--secondary-text-color);
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.7;
-    margin-bottom: 40px;
-    max-width: 665px;
-    margin: 0 auto;
-        margin-bottom: 40px;
+}
+.team-subtitle {
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 665px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .team-cards {
   position: relative;
@@ -60,7 +61,7 @@
 .swiper-container {
   cursor: default;
 }
-  /* Card */
+/* Card */
 .swiper-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -82,7 +83,7 @@
   border-radius: 30px;
   box-shadow: inset 0px 0px 0px 1px var(--input-border-color);
   position: relative;
-  transition: all var(--transition-time) var(--transition-effect);
+  transition: transform var(--transition-time) var(--transition-effect), box-shadow var(--transition-time) var(--transition-effect);
 }
 .swiper-container .swiper-slide:before {
   content: '';
@@ -104,6 +105,7 @@
   flex-direction: column;
   position: relative;
   border-radius: 30px;
+  background-color: var(  --box-bg-color);
 }
 .swiper-container .swiper-slide .card .bg {
   position: absolute;
@@ -240,30 +242,6 @@
   border-radius: 0px 0px 4px 4px;
   transition: all var(--transition-time) var(--transition-effect);
 }
-.swiper-container .swiper-slide .card .social .pointer {
-  display: block;
-  width: 10px;
-  height: 10px;
-  z-index: 2;
-  bottom: 50px;
-  position: absolute;
-  transform: translateX(25px);
-  transition: all var(--transition-time) var(--transition-effect);
-  opacity: 0;
-}
-.swiper-container .swiper-slide .card .social .pointer:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: var(--white-color);
-  transform: rotate(45deg);
-}
-@media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide .card .social .pointer {
-    display: none;
-  }
-}
 .swiper-container .swiper-slide .card .social .icons {
   width: 100%;
   display: flex;
@@ -273,16 +251,16 @@
 .swiper-container .swiper-slide .card .social .icons .icon {
   width: 25%;
   height: 24px;
-  opacity: 0.3;
-  transition: all var(--transition-time) var(--transition-effect);
+  opacity: 0.5;
+
+  cursor: pointer;
+  transition: opacity var(--transition-time) var(--transition-effect);
+}
+body.dark .swiper-container .swiper-slide .card .social .icons .icon {
+  filter: brightness(2);
 }
 .swiper-container .swiper-slide .card .social .icons .icon:hover {
-  opacity: 0.6;
-}
-@media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide .card .social .icons .icon:hover {
-    opacity: 0.3;
-  }
+  opacity: 1;
 }
 .swiper-container .swiper-slide .card .social .icons .icon img {
   width: 100%;
@@ -334,7 +312,7 @@
 .swiper-container .swiper-slide.show-more .card .text {
   color: var(--white-color);
   transform: translateY(0px);
-  transition: all 0.6s ease;
+  transition: all var(--transition-time) var(--transition-effect);
 }
 .swiper-container .swiper-slide.show-more .card .text .name,
 .swiper-container .swiper-slide.show-more .card .text .role {
