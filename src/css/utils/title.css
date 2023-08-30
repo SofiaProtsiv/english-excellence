@@ -5,7 +5,7 @@
   line-height: 1.13;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #121417;
+  color: var(--primary-text-color);
 
   @media (768px <= width) {
     font-size: 40px;
@@ -27,7 +27,7 @@
   z-index: -1;
 
   border-radius: 8px;
-  background-color: #BEE8CC;
+  background-color: var(--highlight-color);
 }
 
 .section__subtitle {
