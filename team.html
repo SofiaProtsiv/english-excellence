@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/english-excellence/assets/scroll-up-c9894fd2.js"></script>
-    <link rel="stylesheet" href="/english-excellence/assets/scroll-up-5c771a4c.css">
+    <script type="module" crossorigin src="/english-excellence/assets/scroll-up-50a1a206.js"></script>
+    <link rel="stylesheet" href="/english-excellence/assets/scroll-up-1ac2b4a6.css">
   </head>
   <body>
     <header class="header">
@@ -31,11 +31,11 @@
     <!-- Start desktop elements -->
     <nav>
       <ul class="header__nav__list">
-        <li><a class="nav__link" href="">About Us</a></li>
-        <li><a class="nav__link" href="">Our Lessons</a></li>
-        <li><a class="nav__link" href="">Teachers</a></li>
-        <li><a class="nav__link" href="">Reviews</a></li>
-        <li><a class="nav__link" href="">Contact us</a></li>
+        <li><a class="nav__link" href="#about-us">About Us</a></li>
+        <li><a class="nav__link" href="#lessons">Our Lessons</a></li>
+        <li><a class="nav__link" href="#teachers">Teachers</a></li>
+        <li><a class="nav__link" href="#reviews">Reviews</a></li>
+        <li><a class="nav__link" href="#leave">Contact us</a></li>
       </ul>
     </nav>
     <div>
@@ -53,7 +53,7 @@
               height="28"
               aria-label="Facebook icon"
             >
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-facebook"></use>
+              <use href="/english-excellence/assets/icons-02e33f49.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -70,7 +70,7 @@
               height="28"
               aria-label="Instagram icon"
             >
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-instagram"></use>
+              <use href="/english-excellence/assets/icons-02e33f49.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -88,95 +88,121 @@
               height="28"
               aria-label="Youtube icon"
             >
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-youtube"></use>
+              <use href="/english-excellence/assets/icons-02e33f49.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <div class="toggle-switch">
-        <p>Light</p>
-        <span>
-          <label class="switch">
-            <input class="theme-switch" type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-        </span>
-        <p>Dark</p>
-      </div>
+    </div>
+    <div class="toggle-switch">
+      <p>Light</p>
+      <span>
+        <label class="switch">
+          <input class="theme-switch" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </span>
+      <p>Dark</p>
     </div>
     <!-- start mobile/tablet elements -->
-    <div class="header__btn" data-modal-open type="button">open</div>
+    <div class="header__btn" data-modal-open type="button">
+      <svg width="32" height="32" aria-label="Instagram icon">
+        <use href="/english-excellence/assets/Nav-042e6b71.svg#openNav"></use>
+      </svg>
+    </div>
   </div>
 </header>
 
     <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <div class="modal__wrapper">
-      <button class="button-close" type="button" data-modal-close>close</button>
-      <nav>
-        <ul class="modal__nav__list">
-          <li><a class="modal__nav__link" href="">About Us</a></li>
-          <li><a class="modal__nav__link" href="">Our Lessons</a></li>
-          <li><a class="modal__nav__link" href="">Teachers</a></li>
-          <li><a class="modal__nav__link" href="">Reviews</a></li>
-          <li><a class="modal__nav__link" href="">Contact us</a></li>
-        </ul>
-      </nav>
-      <ul class="modal__social__list">
-        <li class="">
-          <a
-            class="modal__social__link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
+    <div data-modal-close class="button-close">
+      <svg width="32" height="32" aria-label="Instagram icon">
+        <use href="/english-excellence/assets/closeBTN-8863a56f.svg#closeNav"></use>
+      </svg>
+    </div>
+    <nav>
+      <ul class="modal__nav__list">
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#about-us"
+            >About Us</a
           >
-            <svg
-              class="social__icon"
-              width="28"
-              height="28"
-              aria-label="Facebook icon"
-            >
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-facebook"></use>
-            </svg>
-          </a>
         </li>
-        <li class="">
-          <a
-            class="modal__social__link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#lessons"
+            >Our Lessons</a
           >
-            <svg
-              class="social__icon"
-              width="28"
-              height="28"
-              aria-label="Instagram icon"
-            >
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-instagram"></use>
-            </svg>
-          </a>
         </li>
-
-        <li class="">
-          <a
-            class="modal__social__link"
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#teachers"
+            >Teachers</a
           >
-            <svg
-              class="social__icon"
-              width="28"
-              height="28"
-              aria-label="Youtube icon"
-            >
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-youtube"></use>
-            </svg>
-          </a>
+        </li>
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#reviews"
+            >Reviews</a
+          >
+        </li>
+        <li>
+          <a data-modal-close-link class="modal__nav__link" href="#leave"
+            >Contact us</a
+          >
         </li>
       </ul>
-    </div>
+    </nav>
+    <ul class="modal__social__list">
+      <li class="">
+        <a
+          class="modal__social__link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            class="modal__social__icon"
+            width="28"
+            height="28"
+            aria-label="Facebook icon"
+          >
+            <use href="/english-excellence/assets/icons-02e33f49.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="">
+        <a
+          class="modal__social__link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            class="modal__social__icon"
+            width="28"
+            height="28"
+            aria-label="Instagram icon"
+          >
+            <use href="/english-excellence/assets/icons-02e33f49.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="">
+        <a
+          class="modal__social__link"
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            class="modal__social__icon"
+            width="28"
+            height="28"
+            aria-label="Youtube icon"
+          >
+            <use href="/english-excellence/assets/icons-02e33f49.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 
@@ -245,14 +271,14 @@
         <li class="social-media-contact-item">
           <a class="social-media-link image-btn" href="" target="_blank" rel="noopener noreferrer">
             <svg class="social-contact-icon" width="28" height="28" aria-label="Facebook icon">
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-facebook"></use>
+              <use href="/english-excellence/assets/icons-02e33f49.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social-media-contact-item">
           <a class="social-media-link image-btn" href="" target="_blank" rel="noopener noreferrer">
             <svg class="social-contact-icon" width="28" height="28" aria-label="Instagram icon">
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-instagram"></use>
+              <use href="/english-excellence/assets/icons-02e33f49.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -260,7 +286,7 @@
         <li class="social-media-contact-item">
           <a class="social-media-link image-btn" href="" target="_blank" rel="noopener noreferrer">
             <svg class="social-contact-icon" width="28" height="28" aria-label="Youtube icon">
-              <use href="/english-excellence/assets/icons-bd7c3cfe.svg#icon-youtube"></use>
+              <use href="/english-excellence/assets/icons-02e33f49.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
