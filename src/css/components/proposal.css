@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-    .our-english-pack .container {
+    .proposal .container {
         min-height: 737px;
         padding-top: 40px;
         padding-bottom: 64px;
@@ -7,14 +7,14 @@
         padding-right: 20px;
     }
 
-    .wrapper-our-english-pack {
+    .proposal__wrapper-full {
         position: relative;
         border-radius: 16px;
         background-image: linear-gradient(80deg, var(--accent-color) 0%, var(--highlight-color)100%);
         overflow: hidden;
     }
 
-    .our-english-pack .header-sec {
+    .proposal__wrapper-full .proposal__header-sec {
         color: var(--white-color);
         font-size: 38px;
         font-weight: 700;
@@ -23,11 +23,11 @@
         letter-spacing: 0em;
     }
 
-    .our-english-pack .accent {
+    .proposal__wrapper-full .proposal__accent {
         color: var(--highlight-color);
     }
 
-    .wrapper-our-english-pack .first-extrabg-wrapper {
+    .proposal__wrapper-full .proposal__first-extrabg-wrapper {
         width: 295px;
         height: 408px;
         position: relative;
@@ -40,14 +40,14 @@
         z-index: 9999;
     }
 
-    .first-extrabg-wrapper .list-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
         display: flex;
         flex-direction: column;
         gap: 16px;
 
     }
 
-    .wrapper-our-english-pack .header-th {
+    .proposal__wrapper-full .proposal__header-th {
         color: var(--primary-text-color);
         font-size: 20px;
         font-weight: 700;
@@ -55,17 +55,17 @@
         letter-spacing: -0.02em;
     }
 
-    .first-extrabg-wrapper .list-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
         margin-top: 20px;
     }
 
-    .first-extrabg-wrapper .point-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__point-eng-pack {
         display: flex;
         gap: 8px;
         align-items: center;
     }
 
-    .wrapper-our-english-pack .engpack-icon-wrapper {
+    .proposal__wrapper-full .proposal__engpack-icon-wrapper {
         max-width: 20px;
         max-height: 20px;
         background-color: var(--accent-color);
@@ -74,14 +74,14 @@
         
     }
 
-    .wrapper-our-english-pack .icon-eng-pack {
+    .proposal__wrapper-full .proposal__icon-eng-pack {
         stroke: var(--white-color);
         height: 8px;
         width: 10px;
         margin: 6px 5px;
     }
 
-    .wrapper-our-english-pack .paragraph-eng-pack {
+    .proposal__wrapper-full .proposal__paragraph-eng-pack {
         color: var(--primary-text-color);
         font-size: 14px;
         font-weight: 700;
@@ -89,11 +89,11 @@
         letter-spacing: -0.02em;
     }
 
-    .first-extrabg-wrapper .first-extrabg-image {
+    .proposal__first-extrabg-wrapper .proposal__first-extrabg-image {
         display: none;
     }
 
-    .first-extrabg-wrapper .cta {
+    .proposal__first-extrabg-wrapper .proposal__cta {
         max-width: 255px;
         width: 100%;
         height: 52px;
@@ -109,11 +109,11 @@
         transition: background-color var(--transition-time) var(--transition-effect);
     }
 
-    .first-extrabg-wrapper .cta:hover, .first-extrabg-wrapper .cta:focus {
+    .proposal__first-extrabg-wrapper .proposal__cta:hover, .proposal__first-extrabg-wrapper .proposal__cta:focus {
         background-color: var(--darkgreen-button-color);
     }
 
-    .second-extrabg {
+    .proposal__second-extrabg {
         z-index: 9997;
         position: absolute;
         display: flex;
@@ -128,7 +128,7 @@
         background-color: var(--light-accent-color);
     }
 
-    .third-extrabg {    
+    .proposal__third-extrabg {    
         z-index: 9996;
         position: absolute;
         display: flex;
@@ -146,7 +146,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .our-english-pack .container {
+    .proposal .container {
         min-height: 950px;
         padding-top: 64px;
         padding-left: 18px;
@@ -154,14 +154,14 @@
         padding-bottom: 93px;
     }
 
-    .wrapper-our-english-pack {
+    .proposal__wrapper-full {
         position: relative;
         border-radius: 30px;
         background-image: linear-gradient(80deg, var(--accent-color) 0%, var(--highlight-color)100%);
         overflow: hidden;
     }
 
-    .our-english-pack .header-sec {
+    .proposal__wrapper-full .proposal__header-sec {
         color: var(--white-color);
         font-size: 60px;
         font-weight: 700;
@@ -173,11 +173,11 @@
         
     }
 
-    .our-english-pack .accent {
+    .proposal__wrapper-full .proposal__accent {
         color: var(--highlight-color);
     }
 
-    .wrapper-our-english-pack .first-extrabg-wrapper {
+    .proposal__wrapper-full .proposal__first-extrabg-wrapper {
         max-width: 668px;
         height: 500px;
         position: relative;
@@ -191,14 +191,14 @@
         
     }
 
-    .first-extrabg-wrapper .list-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
         display: flex;
         flex-direction: column;
         gap: 16px;
         max-width: 451px;
     }
 
-    .wrapper-our-english-pack .header-th {
+    .proposal__wrapper-full .proposal__header-th {
         color: var(--primary-text-color);
         font-size: 40px;
         font-weight: 700;
@@ -206,21 +206,21 @@
         letter-spacing: -0.02em;
     }
 
-    .first-extrabg-wrapper .list-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
         margin-top: 32px;
     }
 
-    .first-extrabg-wrapper .second-point {
+    .proposal__first-extrabg-wrapper .proposal__second-point {
         max-width: 581px;
     }
 
-    .first-extrabg-wrapper .point-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__point-eng-pack {
         display: flex;
         gap: 16px;
         align-items: center;
     }
 
-    .wrapper-our-english-pack .engpack-icon-wrapper {
+    .proposal__wrapper-full .proposal__engpack-icon-wrapper {
         max-width: 28px;
         max-height: 28px;
         background-color: var(--accent-color);
@@ -229,14 +229,14 @@
     }
 
 
-    .wrapper-our-english-pack .icon-eng-pack {
+    .proposal__wrapper-full .proposal__icon-eng-pack {
         stroke: var(--white-color);
         height: 13px;
         width: 16px;
         margin: 7px 6px 8px 6px;
     }
 
-    .wrapper-our-english-pack .paragraph-eng-pack {
+    .proposal__wrapper-full .proposal__paragraph-eng-pack {
         color: var(--primary-text-color);
         font-size: 20px;
         font-weight: 700;
@@ -244,13 +244,13 @@
         letter-spacing: -0.02em;
     }
 
-    .first-extrabg-wrapper .first-extrabg-image {
+    .proposal__first-extrabg-wrapper .proposal__first-extrabg-image {
         position: absolute;
         top: 35%;
         left: 75%;
     }
 
-    .first-extrabg-wrapper .cta {
+    .proposal__first-extrabg-wrapper .proposal__cta {
         min-width: 306px;
         max-height: 60px;
         border-radius: 12px;
@@ -265,11 +265,11 @@
         transition: background-color var(--transition-time) var(--transition-effect);
     }
 
-    .first-extrabg-wrapper .cta:hover, .first-extrabg-wrapper .cta:focus {
+    .proposal__first-extrabg-wrapper .proposal__cta:hover, .proposal__first-extrabg-wrapper .proposal__cta:focus {
         background-color: var(--darkgreen-button-color);
     }
 
-    .second-extrabg {
+    .proposal__second-extrabg {
         z-index: 9997;
         position: absolute;
         display: flex;
@@ -284,7 +284,7 @@
         background-color: var(--light-accent-color);
     }
 
-    .third-extrabg {    
+    .proposal__third-extrabg {    
         z-index: 9996;
         position: absolute;
         display: flex;
@@ -302,7 +302,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .our-english-pack .container {
+    .proposal .container {
         min-height: 950px;
         max-width: 1152px;
         padding-top: 77px;
@@ -311,14 +311,14 @@
         padding-right: 64px;
     }
 
-    .wrapper-our-english-pack {
+    .proposal__wrapper-full {
         position: relative;
         border-radius: 30px;
         background-image: linear-gradient(80deg, var(--accent-color) 0%, var(--highlight-color)100%);
         padding-top: 77px;
     }
 
-    .our-english-pack .header-sec {
+    .proposal__wrapper-full .proposal__header-sec {
         color: var(--white-color);
         font-size: 60px;
         font-weight: 700;
@@ -327,11 +327,11 @@
         letter-spacing: 0em;
     }
 
-    .our-english-pack .accent {
+    .proposal__wrapper-full .proposal__accent {
         color: var(--highlight-color);
     }
 
-    .wrapper-our-english-pack .first-extrabg-wrapper {
+    .proposal__wrapper-full .proposal__first-extrabg-wrapper {
         max-width: 1024px;
         height: 471px;
         position: relative;
@@ -344,22 +344,22 @@
         z-index: 9999;
     }
 
-    .first-extrabg-wrapper .list-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
         display: flex;
         flex-direction: column;
         gap: 20px;
         max-width: 664px;
     }
 
-    .first-extrabg-wrapper .second-point {
+    .proposal__first-extrabg-wrapper .proposal__second-point {
         max-width: 581px;
     }
 
-    .first-extrabg-wrapper .third-point {
+    .proposal__first-extrabg-wrapper .proposal__third-point {
         max-width: 624px
     }
 
-    .wrapper-our-english-pack .header-th {
+    .proposal__wrapper-full .proposal__header-th {
         color: var(--primary-text-color);
         font-size: 40px;
         font-weight: 700;
@@ -367,17 +367,17 @@
         letter-spacing: -0.02em;
     }
 
-    .first-extrabg-wrapper .list-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
         margin-top: 40px;
     }
 
-    .first-extrabg-wrapper .point-eng-pack {
+    .proposal__first-extrabg-wrapper .proposal__point-eng-pack {
         display: flex;
         gap: 20px;
         align-items: center;
     }
 
-    .wrapper-our-english-pack .engpack-icon-wrapper {
+    .proposal__wrapper-full .proposal__engpack-icon-wrapper {
         max-width: 28px;
         max-height: 28px;
         background-color: var(--accent-color);
@@ -386,14 +386,14 @@
     }
 
 
-    .wrapper-our-english-pack .icon-eng-pack {
+    .proposal__wrapper-full .proposal__icon-eng-pack {
         stroke: var(--white-color);
         height: 13px;
         width: 16px;
         margin: 7px 6px 8px 6px;
     }
 
-    .wrapper-our-english-pack .paragraph-eng-pack {
+    .proposal__wrapper-full .proposal__paragraph-eng-pack {
         color: var(--primary-text-color);
         font-size: 20px;
         font-weight: 700;
@@ -401,13 +401,13 @@
         letter-spacing: -0.02em;
     }
 
-    .first-extrabg-wrapper .first-extrabg-image {
+    .proposal__first-extrabg-wrapper .proposal__first-extrabg-image {
         position: absolute;
         top: 26%;
         left: 79%;
     }
 
-    .first-extrabg-wrapper .cta {
+    .proposal__first-extrabg-wrapper .proposal__cta {
         min-width: 306px;
         height: 60px;
         border-radius: 12px;
@@ -422,11 +422,11 @@
         transition: background-color var(--transition-time) var(--transition-effect);
     }
 
-    .first-extrabg-wrapper .cta:hover, .first-extrabg-wrapper .cta:focus {
+    .proposal__first-extrabg-wrapper .proposal__cta:hover, .proposal__first-extrabg-wrapper .proposal__cta:focus {
         background-color: var(--darkgreen-button-color);
     }
 
-    .second-extrabg {
+    .proposal__second-extrabg {
         z-index: 9997;
         position: absolute;
         display: flex;
@@ -441,7 +441,7 @@
         background-color: var(--light-accent-color);
     }
 
-    .third-extrabg {
+    .proposal__third-extrabg {
         z-index: 9996;
         position: absolute;
         display: flex;
