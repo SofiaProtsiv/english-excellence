@@ -1,0 +1,197 @@
+/* mobile 1x */
+
+.hero {
+  padding-block: 8px 21px;
+  color: var(--white-color);
+}
+
+.hero__title {
+  margin-bottom: 40px;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.hero__title--accent {
+  color: var(--highlight-color);
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  width: 335px;
+  height: 708px;
+  padding-inline: 20px;
+  padding-bottom: 72px;
+  margin-inline: auto;
+}
+
+.hero__button {
+  width: 295px;
+  height: 52px;
+
+  color: var(--white-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.71;
+
+  border-radius: 12px;
+  border: none;
+  background: var(--accent-color);
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: #38ae5f;
+}
+
+.hero__link {
+  display: block;
+  width: 38px;
+  height: 38px;
+
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+
+  border-radius: 50%;
+  background-color: var(--main-bg-color);
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  background-color: var(--accent-color);
+}
+
+.hero__bg-image {
+  border-radius: 16px;
+  background: linear-gradient(
+      57deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../../assets/img/hero/mobile/girl.jpg) no-repeat;
+}
+
+/* mobile 2x */
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero__bg-image {
+    background: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(../../assets/img/hero/mobile/girl@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* tablet 1x */
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 704px;
+    height: 857px;
+    padding: 260px 32px 0;
+    align-items: flex-start;
+  }
+
+  .hero__title {
+    display: block;
+    max-width: 488px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .hero__button {
+    width: 306px;
+    height: 60px;
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  .hero__link {
+    width: 48px;
+    height: 48px;
+    bottom: 32px;
+    right: 32px;
+  }
+
+  .hero__bg-image {
+    background: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(../../assets/img/hero/tablet/girl.jpg) no-repeat;
+  }
+}
+
+/* tablet 2x */
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__bg-image {
+    background: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(../../assets/img/hero/tablet/girl@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* desktop 1x */
+
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    width: 1152px;
+    height: 629px;
+    padding: 0 64px;
+    align-items: center;
+  }
+
+  .hero__title {
+    max-width: 564px;
+  }
+
+  .hero__bg-image {
+    background: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(../../assets/img/hero/desktop/girl.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+/* desktop 2x */
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero__bg-image {
+    background: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url(../../assets/img/hero/desktop/girl@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
