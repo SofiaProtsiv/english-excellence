@@ -1,4 +1,4 @@
-.section_title {
+.section__title {
   margin-bottom: 16px;
   font-size: 32px;
   font-weight: 700;
@@ -13,11 +13,11 @@
   }
 }
 
-.section_title_span {
+.section__title--span {
   position: relative;
 }
 
-.section_title_span::after {
+.section__title--span::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -30,7 +30,7 @@
   background-color: #BEE8CC;
 }
 
-.section_subtitle {
+.section__subtitle {
   margin: 0 auto 40px;
   font-size: 14px;
   font-weight: 400;
