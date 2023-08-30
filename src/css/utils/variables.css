@@ -10,14 +10,16 @@
   --box-bg-color: #f3f5f6;
   --input-border-color: rgba(18, 20, 23, 0.1);
   --button-border-color: rgba(255, 255, 255, 0.4);
+  --darkgreen-button-color: #38AE5F;
+  --bg-accent-color: rgba(255, 255, 255, 0.5);
   --footer-bg-color: #121417;
   --main-bg-color: #ffffff;
   --white-color: #ffffff;
 
   /* Breakpoints */
-  --mobile: 375px;
+  --mobile: 335px;
   --mobile-max: 767px;
-  --tablet: 768px;
+  --tablet: 704px;
   --table-max: 1279px;
   --desktop: 1280px;
 
