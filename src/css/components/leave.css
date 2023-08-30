@@ -1,4 +1,12 @@
-.leave__adverb-box {
+.leave-section .section_title {
+  margin-bottom: 14px;
+}
+
+.leave-section .section_subtitle {
+  margin-bottom: 20px;
+}
+
+.leave__adv-box {
   display: none;
 }
 
@@ -144,6 +152,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .leave-section .section_title {
+    margin-bottom: 16px;
+  }
+
+  .leave-section .section_subtitle {
+    margin-bottom: 64px;
+  }
+
   .leave-section-form {
     padding: 0 102px;
   }
@@ -159,9 +175,111 @@
     line-height: 24px;
   }
 
+  .leave-section-input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .leave-section-textarea {
+    height: 104px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .leave-section-rd-box {
+    flex-direction: row;
+    gap: 16px;
+  }
+
   .leave-section-rb-fieldset {
     gap: 16px;
     margin-bottom: 32px;
-    border: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .leave-content-group {
+    display: flex;
+    gap: 24px;
+  }
+
+  .leave__adv-box {
+    display: block;
+    overflow: hidden;
+    flex-basis: calc((100% - 24px) / 2);
+    border-radius: 30px;
+    background-color: var(--accent-color);
+    padding-bottom: 40px;
+  }
+
+  .leave__abv-box__text-accent {
+    color: var(--white-color);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    padding-top: 12px;
+  }
+
+  .leave__abv-box__text {
+    color: var(--light-text-color);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 24px;
+  }
+
+  .leave-section-form {
+    padding: 0;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .leave-section .section_title {
+    margin-bottom: 16px;
+  }
+
+  .leave-section .section_subtitle {
+    margin-bottom: 64px;
+  }
+
+  .leave-section-btn {
+    padding: 16px 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .leave-section-btn-descr {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .leave-section-input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .leave-section-textarea {
+    height: 104px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .leave-section-rd-box {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .leave-section-rb-fieldset {
+    gap: 16px;
+    margin-bottom: 32px;
   }
 }
