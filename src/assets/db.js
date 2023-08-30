@@ -1,6 +1,6 @@
-import iconGithub from './icons/github.svg'
-import iconEmail from './icons/email.svg'
-import iconLinkedin from './icons/linkedin.svg'
+import iconGithub from './img/team/github.svg'
+import iconEmail from './img/team/email.svg'
+import iconLinkedin from './img/team/linkedin.svg'
 
 export const icons = {
   iconGithub,
