@@ -1,6 +1,6 @@
-import iconGithub from './icons/github.svg'
-import iconEmail from './icons/email.svg'
-import iconLinkedin from './icons/linkedin.svg'
+import iconGithub from './img/team/github.svg'
+import iconEmail from './img/team/email.svg'
+import iconLinkedin from './img/team/linkedin.svg'
 
 export const icons = {
   iconGithub,
@@ -22,7 +22,7 @@ export const team = [{
   role: "Scrum Master",
   desc: "",
   photo: "https://media.licdn.com/dms/image/D4E03AQG0pLfD4J57Jw/profile-displayphoto-shrink_800_800/0/1667354680523?e=1698883200&v=beta&t=q-VJ8M2zvxQBYO4R6qWC4vm3h0WQuUPRxNZ-2jcSr0I",
-  email: "Zelenyaknikita0927@gmail.com",
+  email: "mailto:Zelenyaknikita0927@gmail.com",
   linkedin: "https://www.linkedin.com/in/zeleniak-nikita/",
   github: "https://github.com/NikitaZelenyak",
 },

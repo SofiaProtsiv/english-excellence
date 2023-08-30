@@ -1,13 +1,4 @@
 :root {
-  /* Section */
-  --section-padding-bottom-mobile: 80px;
-  --section-padding-bottom-tablet: 100px;
-  --section-padding-bottom-desktop: 150px;
-
-  --section-about-padding-top-mobile: 80px;
-  --section-about-padding-top-tablet: 100px;
-  --section-about-padding-top-desktop: 96px;
-
   /* Colors */
   --primary-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);
@@ -39,6 +30,16 @@
 
   /* Backdrop */
   --base-font: 'Manrope', sans-serif;
+
+  /* Section */
+  --section-padding-bottom-mobile: 80px;
+  --section-padding-bottom-tablet: 100px;
+  --section-padding-bottom-desktop: 150px;
+
+  --section-about-padding-top-mobile: 80px;
+  --section-about-padding-top-tablet: 100px;
+  --section-about-padding-top-desktop: 96px;
+
 }
 
 .visually-hidden {

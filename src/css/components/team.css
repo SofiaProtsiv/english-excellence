@@ -8,7 +8,7 @@
   }
 }
 
-.title {
+.team-title {
   text-align: center;
   margin-bottom: 16px;
   color: var(--primary-text-color);
@@ -16,10 +16,10 @@
   font-weight: 700;
   line-height: 1.17;
 }
-.title > span {
+.team-title > span {
   position: relative;
 }
-.title > span:before {
+.team-title > span:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -30,25 +30,26 @@
   z-index: -1;
 }
 @media screen and (max-width: 767px) {
-  .title:before {
+  .team-title:before {
     height: 5px;
     bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .title {
+  .team-title {
     font-size: 32px;
   }
-}.subtitle{
-      color: var(--secondary-text-color);
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.7;
-    margin-bottom: 40px;
-    max-width: 665px;
-    margin: 0 auto;
-        margin-bottom: 40px;
+}
+.team-subtitle {
+  color: var(--secondary-text-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 665px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 .team-cards {
   position: relative;
@@ -60,7 +61,7 @@
 .swiper-container {
   cursor: default;
 }
-  /* Card */
+/* Card */
 .swiper-wrapper {
   display: flex;
   flex-wrap: wrap;
