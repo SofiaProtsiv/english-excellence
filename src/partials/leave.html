@@ -4,13 +4,13 @@
       Leave an
       <span class="section_title_span"> application </span>
     </h2>
-    <p class="leave-section-title-descr">
+    <p class="section_subtitle">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
 
     <div class="leave-content-group">
-      <div class="leave-section-adv-box">
+      <div class="leave__adverb-box">
         <img src="" alt="Young student" class="leave-section-img" />
         <p>1000</p>
         <p>
@@ -30,47 +30,108 @@
           id="comment"
           placeholder="Comment"
         ></textarea>
+
         <fieldset class="leave-section-rb-fieldset">
           <legend class="leave-section-rb-title">Choose a teacher</legend>
 
           <div class="leave-section-rd-box">
-            <!-- <div class="leave-content-rb-group">
-            <div class="leave-section-rb-wrap">
+            <div>
               <input
-                class="leave-section-rb-input visually-hidden"
+                class="leave__radio-btn__input visually-hidden"
                 type="radio"
                 name="teacher"
-                value="true"
                 id="maria"
+                value="maria"
               />
-              <label class="leave-section-rb-wrap-label" for="maria">
-                <span class="leave-section-rb-wrap-span">
-                  <svg class="icon" width="18" height="18">
-                    <use
-                      href="english-excellence/assets/team/icons/email.svg"
-                    ></use>
+              <label class="leave__radio-btn__label" for="maria">
+                <span class="leave__radio-btn__label__span">
+                  <div class="leave__radio-btn__icon-uncheck"></div>
+                  <svg
+                    class="leave__radio-btn__icon-check"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="/public/icons.svg#radio-btn"></use>
                   </svg>
                 </span>
                 Maria
               </label>
-            </div> -->
+            </div>
 
-            <label>
-              <input type="radio" name="teacher" value="maria" checked />
-              Maria
-            </label>
-            <label>
-              <input type="radio" name="teacher" value="artem" />
-              Artem
-            </label>
-            <label>
-              <input type="radio" name="teacher" value="ilona" />
-              Ilona
-            </label>
-            <label>
-              <input type="radio" name="teacher" value="volodymyr" />
-              Volodymyr
-            </label>
+            <div class="leave-section-rd-box">
+              <div>
+                <input
+                  class="leave__radio-btn__input visually-hidden"
+                  type="radio"
+                  name="teacher"
+                  id="artem"
+                  value="artem"
+                />
+                <label class="leave__radio-btn__label" for="artem">
+                  <span class="leave__radio-btn__label__span">
+                    <div class="leave__radio-btn__icon-uncheck"></div>
+                    <svg
+                      class="leave__radio-btn__icon-check"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="/public/icons.svg#radio-btn"></use>
+                    </svg>
+                  </span>
+                  Artem
+                </label>
+              </div>
+            </div>
+
+            <div class="leave-section-rd-box">
+              <div>
+                <input
+                  class="leave__radio-btn__input visually-hidden"
+                  type="radio"
+                  name="teacher"
+                  id="ilona"
+                  value="ilona"
+                />
+                <label class="leave__radio-btn__label" for="ilona">
+                  <span class="leave__radio-btn__label__span">
+                    <div class="leave__radio-btn__icon-uncheck"></div>
+                    <svg
+                      class="leave__radio-btn__icon-check"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="/public/icons.svg#radio-btn"></use>
+                    </svg>
+                  </span>
+                  Ilona
+                </label>
+              </div>
+            </div>
+
+            <div class="leave-section-rd-box">
+              <div>
+                <input
+                  class="leave__radio-btn__input visually-hidden"
+                  type="radio"
+                  name="teacher"
+                  id="volodymyr"
+                  value="volodymyr"
+                />
+                <label class="leave__radio-btn__label" for="volodymyr">
+                  <span class="leave__radio-btn__label__span">
+                    <div class="leave__radio-btn__icon-uncheck"></div>
+                    <svg
+                      class="leave__radio-btn__icon-check"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="/public/icons.svg#radio-btn"></use>
+                    </svg>
+                  </span>
+                  Volodymyr
+                </label>
+              </div>
+            </div>
           </div>
         </fieldset>
 
