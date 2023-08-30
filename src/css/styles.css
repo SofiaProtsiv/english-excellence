@@ -15,6 +15,7 @@
 @import url('components/team.css');
 @import url('components/modal.css');
 @import url('components/switch-theme.css');
+@import url('components/scroll-up.css');
 
 /* Layouts */
 @import url('layout/header.css');
@@ -41,14 +42,27 @@
   -webkit-text-size-adjust: 100%;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
-  width: 0;       
+  width: 0;
 }
 
-body{
-   background-color: var(--main-bg-color);;
+body {
+  background-color: var(--main-bg-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
