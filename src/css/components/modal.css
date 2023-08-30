@@ -1,10 +1,10 @@
 .backdrop {
-  z-index: 6;
+  z-index: 999;
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
@@ -18,6 +18,7 @@
 }
 
 .modal {
+  z-index: 999;
   position: absolute;
   top: 0;
   right: 0;
@@ -26,15 +27,53 @@
   padding: 20px;
   background-color: var(--accent-color);
   transform: scale(1);
-}
-.modal__wrapper {
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
+
 .modal.backdrop.is-hidden {
   transform: scale(0.9);
 }
+
+.modal__nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal__nav__link {
+  color: var(--white-color);
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.3;
+}
 .button-close {
   margin-left: auto;
+}
+
+.modal__social__list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.modal__social__link {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+
+  border: 1px solid var(--white-color);
+}
+
+.modal__social__icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--white-color);
+  transition: fill var(--transition-effect), var(--transition-time);
 }
