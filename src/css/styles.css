@@ -53,6 +53,7 @@ body::-webkit-scrollbar {
 
 body {
   background-color: var(--main-bg-color);
+  transition: var(--transition-time) var(--transition-effect);
 }
 
 .visually-hidden {

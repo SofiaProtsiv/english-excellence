@@ -14,3 +14,14 @@
     padding: 75px 0;
   }
 }
+
+section {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 500ms var(--transition-effect);
+}
+
+section.appear {
+  opacity: 1;
+  transform: translateY(0);
+}

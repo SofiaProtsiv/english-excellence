@@ -1,23 +1,5 @@
-.section-lessons {
-  padding-top: 150px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-@media(max-width:900px) {
-  .section-lessons {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.lesson-container {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.lesson-title {
-  color: #121417;
+.lessons__title {
+  color: var(--primary-text-color);
   text-align: center;
   font-family: 'Manrope', sans-serif;
   font-size: 40px;
@@ -29,11 +11,11 @@
   margin-bottom: 16px;
 }
 
-.lesson-title-span {
+.lessons__title-span {
   position: relative;
 }
 
-.lesson-title-span:before {
+.lessons__title-span:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -44,10 +26,10 @@
   z-index: -1;
 }
 
-.lesson-title-text {
-  color: rgba(18, 20, 23, 0.50);
+.lessons__title-text {
+  color: var(--secondary-text-color);
   text-align: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--base-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -56,71 +38,71 @@
   margin-bottom: 64px;
 }
 
-@media(max-width:900px) {
-  .lesson-title-text {
+@media(max-width:1280px) {
+  .lessons__title-text {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
-@media(max-width:520px) {
-  .lesson-title-text {
+@media(max-width:768px) {
+  .lessons__title-text {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
 
-.lesson-menu {
+.lessons__menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
-@media(max-width:900px) {
-  .lesson-menu {
+@media(max-width:1280px) {
+  .lessons__menu {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media(max-width:520px) {
-  .lesson-menu {
+@media(max-width:768px) {
+  .lessons__menu {
     grid-template-columns: 1fr;
   }
 }
 
-.lesson-items {
+.lessons__items {
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
   border-radius: 30px;
-  border: 1px solid #4DC274;
+  border: 1px solid var(--accent-color);
 }
 
-@media(max-width:900px) {
-  .lesson-items {
+@media(max-width:1280px) {
+  .lessons__items {
 
     padding: 32px 16px;
   }
 }
 
-@media(max-width:520px) {
-  .lesson-items {
+@media(max-width:768px) {
+  .lessons__items {
 
     padding: 32px 20px;
   }
 }
 
-.lesson-items--active {
-  background-color: #4DC274;
+.lessons__items--active {
+  background-color: var(--accent-color);
   border: none;
 }
 
-.lesson-strong {
-  color: #121417;
+.lessons-strong {
+  color: var(--primary-text-color);
   text-align: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--base-font);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -130,14 +112,14 @@
   margin-bottom: 16px;
 }
 
-.lesson-strong--active {
-  color: #fff;
+.lessons-strong--active {
+  color: var(--white-color);
 }
 
-.lesson-span {
-  color: #121417;
+.lessons-span {
+  color: var(--primary-text-color);
   text-align: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--base-font);
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -147,14 +129,14 @@
   margin-bottom: 16px;
 }
 
-.lesson-span--active {
-  color: #fff;
+.lessons-span--active {
+  color: var(--white-color);
 }
 
-.lesson-text {
-  color: rgba(18, 20, 23, 0.50);
+.lessons__text {
+  color: var(--secondary-text-color);
   text-align: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--base-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -163,13 +145,13 @@
   margin-bottom: 16px;
 }
 
-.lesson-text--active {
-  color: rgba(255, 255, 255, 0.70);
+.lessons__text--active {
+  color: var(--light-text-color);
 }
 
-.lesson-btn {
-  color: #FFF;
-  font-family: 'Manrope', sans-serif;
+.lessons__btn {
+  color: var(--white-color);
+  font-family: var(--base-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -177,16 +159,26 @@
   /* 155.556% */
   padding: 16px 38px;
   border-radius: 12px;
-  background-color: #4DC274;
-  transition: 0.4s;
+  background-color: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
+  cursor: pointer;
 }
 
-.lesson-btn--active {
-  border: 1px solid rgba(255, 255, 255, 0.40);
+.lessons__btn:hover,
+.lessons__btn:focus {
+  background-color: var(--darkgreen-button-color);
 }
 
-.lesson-btn:hover,
-.lesson-btn:focus {
-  background-color: #38AE5F;
+.lessons__btn--active {
+  cursor: pointer;
+  border: 1px solid var(--button-border-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lessons__btn--active:hover,
+.lessons__btn--active:focus {
+  outline: none;
+  background-color: var(--main-bg-color);
+  color: var(--accent-color);
 }

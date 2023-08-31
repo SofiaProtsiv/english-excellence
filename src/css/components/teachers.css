@@ -9,10 +9,8 @@
   flex-direction: column;
   align-items: center;
   row-gap: 40px;
-}
 
-@media screen and (min-width: 768px) {
-  .teachers-list {
+  @media (768px <= width) {
     justify-content: center;
     align-items: start;
     flex-direction: row;
@@ -21,27 +19,25 @@
   }
 }
 
-.teacher-card {
+.teacher-list__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-@media screen and (min-width: 768px) {
-  .teacher-card {
+  @media (768px <= width) {
     width: 272px;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .teacher-card {
+  @media (1280px <= width) {
     width: 232px;
   }
 }
 
 .avatar {
+  border-radius: 50%;
   width: 150px;
   height: 150px;
+  overflow: hidden;
   margin-bottom: 16px;
 }
 
@@ -60,10 +56,8 @@
   text-align: center;
   font-size: 14px;
   line-height: 1.71; /* 171.429% */
-}
 
-@media screen and (min-width: 768px) {
-  .skills {
+  @media (768px <= width) {
     font-size: inherit;
     line-height: 1.5;
   }

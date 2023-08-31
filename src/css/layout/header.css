@@ -2,7 +2,7 @@
   padding: 20px 0px;
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.788);
+  background-color:  var(--header-bg-color);
   z-index: 99;
 }
 .header__wrapper {
