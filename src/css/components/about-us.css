@@ -62,7 +62,7 @@
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  color: var(--const-primary-text-color);
+  color: var(--accent-color);
 }
 
 .about-us_list__text {
@@ -71,7 +71,7 @@
   font-weight: 700;
   line-height: 1.33;
   letter-spacing: -0.02em;
-  color: var(--primary-text-color);
+  color: var(--const-primary-text-color);
 }
 
 .about-us__img-wrap {
