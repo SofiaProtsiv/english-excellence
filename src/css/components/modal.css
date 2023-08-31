@@ -26,16 +26,15 @@
   height: 100%;
   padding: 20px;
   background-color: var(--accent-color);
-  transform: scale(1);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  transform: translateY(0%);
+  transition: transform var(--transition-effect), var(--transition-time);
 }
-
 .modal.backdrop.is-hidden {
-  transform: scale(0.9);
+  transform: translateY(-100%);
 }
 
 .modal__nav__list {
@@ -76,4 +75,10 @@
   height: 28px;
   fill: var(--white-color);
   transition: fill var(--transition-effect), var(--transition-time);
+}
+
+.close__icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--white-color);
 }
