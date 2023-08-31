@@ -144,14 +144,22 @@
 }
 
 .footer__social__link:hover .footer__social__icon,
-.sfooter__social__link:focus .footer__social__icon {
+.footer__social__link:focus .footer__social__icon {
   fill: var(--accent-color);
 }
 
 .footer__social__icon {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   fill: var(--footer-primary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social__icon {
+    width: 28px;
+    height: 28px;
+    fill: var(--footer-primary-text-color);
+  }
 }
 
 .footer__social__link:hover,
