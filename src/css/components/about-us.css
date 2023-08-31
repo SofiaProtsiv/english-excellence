@@ -62,7 +62,7 @@
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  color: #4DC274;
+  color: var(--accent-color);
 }
 
 .about-us_list__text {
@@ -71,7 +71,7 @@
   font-weight: 700;
   line-height: 1.33;
   letter-spacing: -0.02em;
-  color: #121417;
+  color: var(--primary-text-color);
 }
 
 .about-us__img-wrap {
@@ -80,7 +80,7 @@
   align-items: center;
   padding: 70px 40px;
   border-radius: 16px;
-  background: #4DC274;
+  background-color: var(--accent-color);
 
   @media (1280px <= width) {
     padding: 90px 27px;
