@@ -3,7 +3,6 @@
   --primary-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);
   --light-text-color: rgba(255, 255, 255, 0.7);
-  --footer-light-text-color: rgba(255, 255, 255, 0.6);
   --accent-color: #4dc274;
   --light-accent-color: #d4fde1;
   --highlight-color: #bee8cc;
@@ -13,7 +12,8 @@
   --footer-bg-color: #121417;
   --main-bg-color: #ffffff;
   --white-color: #ffffff;
-
+  --footer-primary-text-color: #fff;
+  --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
   /* Breakpoints */
   --mobile: 375px;
   --mobile-max: 767px;
