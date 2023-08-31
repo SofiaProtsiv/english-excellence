@@ -5,7 +5,8 @@
   color: var(--footer-primary-text-color);
 }
 
-@media screen {}
+@media screen {
+}
 
 .footer {
   padding-top: 64px;
@@ -56,12 +57,12 @@
   display: block;
 }
 
-.footer__contact__list>li:first-child {
+.footer__contact__list > li:first-child {
   margin-bottom: 16px;
 }
 
 /* The second column containing menu items */
-.footer__menu__list__item+.footer__menu__list__item {
+.footer__menu__list__item + .footer__menu__list__item {
   margin-top: 20px;
 }
 
@@ -110,7 +111,6 @@
   border-top: 1px solid var(--social-border-color);
   padding-top: 10px;
   width: 100%;
-
 }
 
 .top-row {
