@@ -43,7 +43,7 @@
 .about-us_list__item {
   padding: 32px;
   border-radius: 16px;
-  background: #F3F5F6;
+  background: var(--about-us-card-bg-color);
 
   @media (768px <= width) {
     width: 336px;
