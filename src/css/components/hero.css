@@ -51,13 +51,12 @@
   border: none;
   background: var(--accent-color);
 
-  transition: background-color var(--transition-time) var(--transition-effect)
-    0ms;
+  transition: background-color var(--transition-time) var(--transition-effect);
 }
 
 .link__leave-an-application:hover,
 .link__leave-an-application:focus {
-  background-color: var(--darkgreen-button-color);
+  background-color: var(--accent-color);
 }
 
 .hero__scroll {
@@ -75,13 +74,12 @@
   border-radius: 50%;
   background-color: var(--white-color);
 
-  transition: background-color var(--transition-time) var(--transition-effect)
-    0ms;
+  transition: background-color var(--transition-time) var(--transition-effect);
 }
 
 .hero__scroll--down {
   fill: var(--accent-color);
-  transition: fill transform var(--transition-time) var(--transition-effect) 0ms;
+  transition: fill transform var(--transition-time) var(--transition-effect);
 }
 
 .hero__scroll:hover,

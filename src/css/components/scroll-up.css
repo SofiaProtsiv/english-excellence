@@ -7,9 +7,9 @@
   height: 48px;
   align-items: center;
   justify-content: center;
-  background: var(--header-bg-color);
+  background: var(--main-bg-color);
   border-radius: 50%;
-  border: 3px solid var(--accent-color);
+  border: 3px solid var(--dark-hover-color);
   text-decoration: none;
   opacity: 1;
   transition: var(--transition-time) var(--transition-effect);
@@ -21,7 +21,7 @@
 .scroll-up:hover,
 .scroll-up:focus {
   transform: translateY(-4px);
-  background-color: var(--accent-color);
+background-color: var(--dark-hover-color);
 }
 
 .scroll-up svg {

@@ -17,7 +17,7 @@
   position: relative;
 }
 
-body.dark .section__title--span{
+body.dark .section__title--span {
   text-shadow: 2px 2px 1px black;
 }
 
@@ -35,7 +35,7 @@ body.dark .section__title--span{
 }
 
 body.dark .section__title--span::after {
- background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .section__subtitle {
