@@ -69,7 +69,7 @@
   right: 14px;
 
   border-radius: 50%;
-  background-color: var(--main-bg-color);
+  background-color: var(--white-color);
 
   transition: background-color var(--transition-time) var(--transition-effect)
     0ms;

@@ -16,6 +16,7 @@
   --main-bg-color: #ffffff;
   --white-color: #ffffff;
   --white-color-half-alpha: rgba(255, 255, 255, 0.5);
+  --header-bg-color: rgba(255, 255, 255, 0.7);
 
   /* Breakpoints */
   --mobile: 375px;
@@ -53,4 +54,5 @@ body.dark{
   --input-border-color: rgba(200, 200, 200, 0.1);
   --button-border-color: rgba(45, 45, 45, 0.4);
   --main-bg-color: #262c27;
+    --header-bg-color: rgba(	38, 44, 39, 0.7);
 }
