@@ -50,9 +50,9 @@ btnShow.forEach(function (el) {
 });
 
 function showMore(event) {
-  const openCard = document.querySelector(".swiper-slide.show-more")
+  const openCard = document.querySelector(".team__cards__card-container.show-more")
 
-  const card = event.target.closest(".swiper-slide");
+  const card = event.target.closest(".team__cards__card-container");
 
   if (!card) return
 
