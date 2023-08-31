@@ -27,9 +27,9 @@
 }
 
 .lessons__title-text {
-  color: rgba(18, 20, 23, 0.50);
+  color: var(--secondary-text-color);
   text-align: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--base-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -77,7 +77,7 @@
   flex-direction: column;
   gap: 16px;
   border-radius: 30px;
-  border: 1px solid #4DC274;
+  border: 1px solid var(--accent-color);
 }
 
 @media(max-width:1280px) {
@@ -95,14 +95,14 @@
 }
 
 .lessons__items--active {
-  background-color: #4DC274;
+  background-color: var(--accent-color);
   border: none;
 }
 
 .lessons-strong {
-  color: #121417;
+  color: var(--primary-text-color);
   text-align: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--base-font);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -113,13 +113,13 @@
 }
 
 .lessons-strong--active {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .lessons-span {
   color: var(--primary-text-color);
   text-align: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--base-font);
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -130,13 +130,13 @@
 }
 
 .lessons-span--active {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .lessons__text {
-  color: rgba(18, 20, 23, 0.50);
+  color: var(--secondary-text-color);
   text-align: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--base-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -146,12 +146,12 @@
 }
 
 .lessons__text--active {
-  color: rgba(255, 255, 255, 0.70);
+  color: var(--light-text-color);
 }
 
 .lessons__btn {
-  color: #FFF;
-  font-family: 'Manrope', sans-serif;
+  color: var(--white-color);
+  font-family: var(--base-font);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -159,16 +159,26 @@
   /* 155.556% */
   padding: 16px 38px;
   border-radius: 12px;
-  background-color: #4DC274;
-  transition: 0.4s;
+  background-color: var(--accent-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
-}
-
-.lessons__btn--active {
-  border: 1px solid rgba(255, 255, 255, 0.40);
+  cursor: pointer;
 }
 
 .lessons__btn:hover,
 .lessons__btn:focus {
-  background-color: #38AE5F;
+  background-color: var(--darkgreen-button-color);
+}
+
+.lessons__btn--active {
+  cursor: pointer;
+  border: 1px solid var(--button-border-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lessons__btn--active:hover,
+.lessons__btn--active:focus {
+  outline: none;
+  background-color: var(--main-bg-color);
+  color: var(--accent-color);
 }
