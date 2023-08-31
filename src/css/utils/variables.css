@@ -14,6 +14,7 @@
   --white-color: #ffffff;
   --footer-primary-text-color: #fff;
   --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
+  --social-border-color: rgba(255, 255, 255, 0.1);
   /* Breakpoints */
   --mobile: 375px;
   --mobile-max: 767px;

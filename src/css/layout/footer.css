@@ -1,10 +1,15 @@
 /* The first column containing the logo and contact info */
+.footer {
+  padding-top: 32px;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-primary-text-color);
+}
+
+@media screen {}
 
 .footer {
   padding-top: 64px;
   /* 32/40 */
-  background-color: var(--footer-bg-color);
-  color: var(--footer-primary-text-color);
   padding-bottom: 16px;
 }
 
@@ -18,7 +23,7 @@
   color: var(--footer-primary-text-color);
   padding-top: 64px;
   padding-bottom: 64px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  /* border-bottom: 1px solid var(--social-border-color); */
   padding-bottom: 110px;
 }
 
@@ -63,6 +68,7 @@
 .footer__menu__link:hover,
 .footer__menu__link:focus {
   color: var(--accent-color);
+  transition: color var(--transition-effect), var(--transition-time);
 }
 
 .footer__social__list {
@@ -76,7 +82,7 @@
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid var(--social-border-color);
   transition: border var(--transition-effect), var(--transition-time);
 }
 
@@ -89,7 +95,6 @@
   width: 28px;
   height: 28px;
   fill: var(--footer-primary-text-color);
-
 }
 
 .footer__social__link:hover,
@@ -97,21 +102,12 @@
   border: 1px solid var(--light-accent-color);
 }
 
-.footer-left,
-.footer-right {
-  flex: 1;
-  text-align: left;
-  text-align: right;
-
-}
-
-
 /* For the footer line and copyright and terms */
-.copyright-privacy-terms.container {
+.copyright-privacy-terms {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--social-border-color);
   padding-top: 10px;
   width: 100%;
 
@@ -146,7 +142,7 @@
 }
 
 .small-text {
-  color: rgba(255, 255, 255, 0.60);
+  color: var(--footer-secondary-text-color);
   font-family: Manrope;
   font-size: 0.875rem;
   font-style: normal;
