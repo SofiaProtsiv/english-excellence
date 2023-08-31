@@ -6,8 +6,9 @@
 }
 
 .hero__title {
-  margin-bottom: 40px;
+  margin-bottom: clamp(36px, 10.7vw, 40px);
   font-size: 38px;
+  font-size: clamp(32px, 10.14vw, 38px);
   font-style: normal;
   font-weight: 700;
   line-height: 1.05;
@@ -21,16 +22,23 @@
   display: flex;
   align-items: flex-end;
   position: relative;
+  justify-content: center;
 
-  width: 335px;
-  height: 708px;
+  width: clamp(278px, calc(100vw - 40px), 335px);
+  height: clamp(604px, 189vw, 708px);
   padding-inline: 20px;
+  padding-inline: clamp(16px, 5.334vw, 20px);
   padding-bottom: 72px;
   margin-inline: auto;
 }
 
-.hero__button {
+.link__leave-an-application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 295px;
+  width: clamp(250px, 78.67vw, 295px);
   height: 52px;
 
   color: var(--white-color);
@@ -42,15 +50,20 @@
   border-radius: 12px;
   border: none;
   background: var(--accent-color);
+
+  transition: background-color var(--transition-time) var(--transition-effect);
 }
 
-.hero__button:hover,
-.hero__button:focus {
-  background-color: #38ae5f;
+.link__leave-an-application:hover,
+.link__leave-an-application:focus {
+  background-color: var(--accent-color);
 }
 
-.hero__link {
-  display: block;
+.hero__scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 38px;
   height: 38px;
 
@@ -59,12 +72,25 @@
   right: 14px;
 
   border-radius: 50%;
-  background-color: var(--main-bg-color);
+  background-color: var(--white-color);
+
+  transition: background-color var(--transition-time) var(--transition-effect);
 }
 
-.hero__link:hover,
-.hero__link:focus {
+.hero__scroll--down {
+  fill: var(--accent-color);
+  transition: fill transform var(--transition-time) var(--transition-effect);
+}
+
+.hero__scroll:hover,
+.hero__scroll:focus {
+  transform: translateY(1px);
   background-color: var(--accent-color);
+}
+
+.hero__scroll:hover .hero__scroll--down,
+.hero__scroll:focus .hero__scroll--down {
+  fill: var(--white-color);
 }
 
 .hero__bg-image {
@@ -75,6 +101,7 @@
       rgba(0, 0, 0, 0) 100%
     ),
     url(../../assets/img/hero/mobile/girl.jpg) no-repeat;
+  background-size: cover;
 }
 
 /* mobile 2x */
@@ -102,6 +129,7 @@
     height: 857px;
     padding: 260px 32px 0;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .hero__title {
@@ -112,7 +140,7 @@
     line-height: 1.17;
   }
 
-  .hero__button {
+  .link__leave-an-application {
     width: 306px;
     height: 60px;
     color: var(--white-color);
@@ -120,11 +148,16 @@
     line-height: 1.56;
   }
 
-  .hero__link {
+  .hero__scroll {
     width: 48px;
     height: 48px;
     bottom: 32px;
     right: 32px;
+  }
+
+  .hero__scroll--down {
+    width: 24px;
+    height: 24px;
   }
 
   .hero__bg-image {

@@ -16,7 +16,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90grad, var(--highlight-color), var(--accent-color));
+  background: linear-gradient(
+    90grad,
+    var(--highlight-color),
+    var(--accent-color)
+  );
   transition: 0.4s;
 }
 
@@ -27,13 +31,13 @@
   width: 20px;
   left: 32px;
   bottom: 5px;
-  background-color:   var(--white-color);
+  background-color: var(--white-color);
   transition: 0.4s;
-    transform: translateX(-24px);
+  transform: translateX(-24px);
 }
 
 input:checked + .slider {
-   background: var(--accent-color);
+  background: var(--accent-color);
 }
 
 input:checked + .slider:before {
@@ -50,7 +54,6 @@ input:checked + .slider:before {
 
 input:checked + .round::before {
   background-color: var(--secondary-text-color);
-  
 }
 
 .toggle-switch {
@@ -62,4 +65,9 @@ input:checked + .round::before {
 .toggle-switch p {
   padding: 1em;
   color: var(--primary-text-color);
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.3;
 }
