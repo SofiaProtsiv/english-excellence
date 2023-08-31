@@ -6,8 +6,9 @@
 }
 
 .hero__title {
-  margin-bottom: 40px;
+  margin-bottom: clamp(36px, 10.7vw, 40px);
   font-size: 38px;
+  font-size: clamp(32px, 10.14vw, 38px);
   font-style: normal;
   font-weight: 700;
   line-height: 1.05;
@@ -21,10 +22,12 @@
   display: flex;
   align-items: flex-end;
   position: relative;
+  justify-content: center;
 
-  width: 335px;
-  height: 708px;
+  width: clamp(278px, calc(100vw - 40px), 335px);
+  height: clamp(604px, 189vw, 708px);
   padding-inline: 20px;
+  padding-inline: clamp(16px, 5.334vw, 20px);
   padding-bottom: 72px;
   margin-inline: auto;
 }
@@ -35,6 +38,7 @@
   align-items: center;
 
   width: 295px;
+  width: clamp(250px, 78.67vw, 295px);
   height: 52px;
 
   color: var(--white-color);
@@ -53,7 +57,7 @@
 
 .link__leave-an-application:hover,
 .link__leave-an-application:focus {
-  background-color: #38ae5f;
+  background-color: var(--darkgreen-button-color);
 }
 
 .hero__scroll {
@@ -99,6 +103,7 @@
       rgba(0, 0, 0, 0) 100%
     ),
     url(../../assets/img/hero/mobile/girl.jpg) no-repeat;
+  background-size: cover;
 }
 
 /* mobile 2x */
@@ -126,6 +131,7 @@
     height: 857px;
     padding: 260px 32px 0;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .hero__title {
