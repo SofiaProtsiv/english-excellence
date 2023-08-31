@@ -1,6 +1,5 @@
 @media screen and (max-width: 767px) {
     .proposal .container {
-        width: 335px;
         min-height: 737px;
         padding-top: 40px;
         padding-bottom: 64px;
@@ -38,7 +37,7 @@
         margin-top: 65px;
         padding-top: 40px;
         padding-left: 19px;
-        z-index: 9999;
+        z-index: 10;
     }
 
     .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
@@ -118,7 +117,7 @@
     }
 
     .proposal__second-extrabg {
-        z-index: 9997;
+        z-index: 7;
         position: absolute;
         display: flex;
         max-width: 295px;
@@ -133,7 +132,7 @@
     }
 
     .proposal__third-extrabg {    
-        z-index: 9996;
+        z-index: 6;
         position: absolute;
         display: flex;
         max-width: 295px;
@@ -151,7 +150,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .proposal .container {
-        width: 704px;
         min-height: 950px;
         padding-top: 64px;
         padding-left: 18px;
@@ -192,7 +190,7 @@
         padding-left: 32px;
         padding-bottom: 63px;
         margin-top: 83px;
-        z-index: 9999;
+        z-index: 10;
         
     }
 
@@ -278,7 +276,7 @@
     }
 
     .proposal__second-extrabg {
-        z-index: 9997;
+        z-index: 7;
         position: absolute;
         display: flex;
         max-width: 668px;
@@ -293,7 +291,7 @@
     }
 
     .proposal__third-extrabg {    
-        z-index: 9996;
+        z-index: 6;
         position: absolute;
         display: flex;
         max-width: 668px;
@@ -349,7 +347,7 @@
         padding-left: 64px;
         padding-bottom: 63px;
         margin-top: 133px;
-        z-index: 9999;
+        z-index: 10;
     }
 
     .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
@@ -438,7 +436,7 @@
     }
 
     .proposal__second-extrabg {
-        z-index: 9997;
+        z-index: 7;
         position: absolute;
         display: flex;
         max-width: 1050px;
@@ -453,7 +451,7 @@
     }
 
     .proposal__third-extrabg {
-        z-index: 9996;
+        z-index: 6;
         position: absolute;
         display: flex;
         max-width: 1011px;

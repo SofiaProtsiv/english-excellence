@@ -41,5 +41,9 @@ xmlns:xlink="http://www.w3.org/1999/xlink">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.4286" d="M19.602 14.771h24.398"></path>
 </symbol>
 
+<symbol id="icon-agree" viewBox="0 0 40 32">
+<path fill="none" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6" d="M36 4l-22 24-10-10.909"></path>
+</symbol>
+
 </defs>
 </svg>
