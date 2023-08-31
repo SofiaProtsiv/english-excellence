@@ -1,3 +1,5 @@
+console.log(window.location.pathname);
+
 if (window.location.pathname === '/') {
   document.querySelectorAll('.link').forEach(link => {
     const anchor = link.href.split('#')[1];
