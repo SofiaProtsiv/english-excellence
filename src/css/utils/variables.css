@@ -17,10 +17,10 @@
   --white-color: #ffffff;
 
   /* Breakpoints */
-  --mobile: 335px;
-  --mobile-max: 767px;
-  --tablet: 704px;
-  --table-max: 1279px;
+  --mobile: 375px;
+  --mobile-max: 767.98px;
+  --tablet: 768px;
+  --table-max: 1279.98px;
   --desktop: 1280px;
 
   /* Transition properties */
