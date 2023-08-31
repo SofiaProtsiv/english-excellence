@@ -161,7 +161,7 @@
 
 /* For the footer line and copyright and terms */
 .copyright-privacy-terms {
-  display: inline-block;
+  display: block;
   /* flex-direction: column; */
   /* align-items: flex-start; */
   border-top: 1px solid var(--social-border-color);
@@ -169,6 +169,7 @@
 
 }
 
+/* tablett+ */
 /* @media screen and (min-width: 768px) { */
 /* .copyright-privacy-terms { */
 /* display: flex; */
@@ -179,7 +180,8 @@
 /* width: 100%; */
 /* } */
 /* } */
-
+/*  */
+/*  */
 .top-row {
   display: block;
   justify-content: space-between;
