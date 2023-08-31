@@ -25,6 +25,7 @@
 @import url('utils/section.css');
 @import url('utils/container.css');
 @import url('utils/title.css');
+@import url('utils/logo.css');
 
 :root {
   font-family: 'Manrope', sans-serif;
