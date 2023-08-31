@@ -7,7 +7,7 @@
   text-align: center;
   color: var(--primary-text-color);
 
-  @media (768px <= width) {
+  @media (min-width: 768px) {
     font-size: 40px;
     line-height: 1.2;
   }
@@ -46,7 +46,7 @@ body.dark .section__title--span::after {
   text-align: center;
   color: var(--secondary-text-color);
 
-  @media (768px <= width) {
+  @media (min-width: 768px) {
     margin: 0 auto 64px;
     font-size: 18px;
     line-height: 1.67;
