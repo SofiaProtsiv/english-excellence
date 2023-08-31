@@ -1,11 +1,11 @@
-@media (1280px <= width) {
+@media (min-width: 1280px) {
   .section.about-us__section {
     padding-top: var(--section-about-padding-top-desktop);
   }
 }
 
 .section__subtitle--center {
-  @media (768px <= width) {
+  @media (min-width: 768px) {
     width: 658px;
   }
 }
@@ -14,11 +14,11 @@
   display: flex;
   gap: 20px;
 
-  @media (width < 1280px) {
+  @media (max-width: 1280px) {
     flex-direction: column;
   }
 
-  @media (768px <= width) {
+  @media (min-width: 768px) {
     gap: 32px;
   }
 }
@@ -30,12 +30,12 @@
 
   counter-reset: customCounter;
 
-  @media (width < 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     gap: 20px;
   }
 
-  @media (1280px <= width) {
+  @media (min-width: 1280px) {
     width: 682px;
   }
 }
@@ -45,11 +45,11 @@
   border-radius: 16px;
   background: var(--about-us-card-bg-color);
 
-  @media (768px <= width) {
+  @media (min-width: 768px) {
     width: 336px;
   }
 
-  @media (1280px <= width) {
+  @media (min-width: 1280px) {
     width: 325px;
   }
 }
@@ -82,7 +82,7 @@
   border-radius: 16px;
   background-color: var(--accent-color);
 
-  @media (1280px <= width) {
+  @media (min-width: 1280px) {
     padding: 90px 27px;
   }
 }
