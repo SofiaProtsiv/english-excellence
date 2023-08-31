@@ -1,16 +1,18 @@
-.leave-section .section_title {
+.leave-section .section__title {
   margin-bottom: 14px;
+  font-weight: 600;
 }
 
-.leave-section .section_subtitle {
+.leave-section .section__subtitle {
   margin-bottom: 20px;
+  color: rgba(18, 20, 23, 0.8);
 }
 
 .leave__adv-box {
   display: none;
 }
 
-.leave-section-input {
+.leave-section__input {
   width: 100%;
   border-radius: 12px;
   border: 1px solid var(--input-border-color);
@@ -26,7 +28,29 @@
   transition: border-color var(--transition-time) var(--transition-effect);
 }
 
-.leave-section-input:focus {
+.leave-section__input:focus {
+  border-color: var(--accent-color);
+}
+
+.leave-section__textarea {
+  width: 100%;
+  height: 94px;
+  border-radius: 12px;
+  border: 1px solid var(--input-border-color);
+  padding: 16px 18px;
+  color: var(--primary-text-color);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 20px;
+  outline: none;
+  resize: none;
+  transition: border-color var(--transition-time) var(--transition-effect);
+}
+
+.leave-section__textarea:focus {
   border-color: var(--accent-color);
 }
 
@@ -35,7 +59,7 @@
   box-sizing: content-box;
   fill: transparent;
   position: absolute;
-  top: 0;
+  top: -2px;
   left: -32px;
   transition: fill var(--transition-time) var(--transition-effect);
 }
@@ -48,14 +72,14 @@
   border: 2px solid rgba(18, 20, 23, 0.2);
   box-sizing: content-box;
   position: absolute;
-  top: 3px;
+  top: 1px;
   left: -29px;
 }
 
 .leave__radio-btn__label {
   color: var(--primary-text-color);
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -71,27 +95,6 @@
   + .leave__radio-btn__label
   .leave__radio-btn__icon-check {
   fill: var(--accent-color);
-}
-
-.leave-section-textarea {
-  width: 100%;
-  height: 94px;
-  border-radius: 12px;
-  border: 1px solid var(--input-border-color);
-  padding: 16px 18px;
-  color: var(--primary-text-color);
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  margin-bottom: 20px;
-  outline: none;
-  resize: none;
-}
-
-.leave-section-textarea:focus {
-  border-color: var(--accent-color);
 }
 
 .leave-section-btn-descr {
@@ -145,19 +148,22 @@
   margin-bottom: 14px;
 }
 
-.leave-section-rd-box {
+.leave-section__rb-box {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
-  .leave-section .section_title {
+  .leave-section .section__title {
     margin-bottom: 16px;
+    font-weight: 700;
   }
 
-  .leave-section .section_subtitle {
+  .leave-section .section__subtitle {
     margin-bottom: 64px;
+    color: var(--secondary-text-color);
+    width: 586px;
   }
 
   .leave-section-form {
@@ -175,19 +181,19 @@
     line-height: 24px;
   }
 
-  .leave-section-input {
+  .leave-section__input {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .leave-section-textarea {
+  .leave-section__textarea {
     height: 104px;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .leave-section-rd-box {
+  .leave-section__rb-box {
     flex-direction: row;
     gap: 16px;
   }
@@ -222,6 +228,7 @@
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -0.02em;
+    margin-top: auto;
     margin-bottom: 8px;
     padding-top: 12px;
   }
@@ -242,11 +249,12 @@
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  .leave-section .section_title {
+  .leave-section .section__title {
     margin-bottom: 16px;
   }
 
-  .leave-section .section_subtitle {
+  .leave-section .section__subtitle {
+    width: 709px;
     margin-bottom: 64px;
   }
 
@@ -261,13 +269,13 @@
     line-height: 24px;
   }
 
-  .leave-section-input {
+  .leave-section__input {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .leave-section-textarea {
-    height: 104px;
+  .leave-section__textarea {
+    height: 129px;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
@@ -278,8 +286,16 @@
     gap: 16px;
   }
 
+  .leave-section-rb-title {
+    margin-bottom: 16px;
+  }
+
   .leave-section-rb-fieldset {
     gap: 16px;
     margin-bottom: 32px;
+  }
+
+  .leave__adv-box img {
+    margin-bottom: 12px;
   }
 }
