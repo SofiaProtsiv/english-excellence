@@ -1,6 +1,7 @@
 :root {
   /* Colors */
   --primary-text-color: #121417;
+  --const-primary-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);
   --light-text-color: rgba(255, 255, 255, 0.7);
   --footer-light-text-color: rgba(255, 255, 255, 0.6);
