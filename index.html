@@ -19,11 +19,11 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/english-excellence/assets/scroll-up-af8993e4.js"></script>
-    <link rel="stylesheet" href="/english-excellence/assets/scroll-up-ccce6953.css">
+    <script type="module" crossorigin src="/english-excellence/assets/scroll-up-8f10de48.js"></script>
+    <link rel="stylesheet" href="/english-excellence/assets/scroll-up-52def31d.css">
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
   <div class="container header__wrapper">
     <div class="">
       <p class="logo">english<span class="logo--accent">excellence</span>.</p>
@@ -208,7 +208,7 @@
   </div>
 </div>
 
-    <section class="hero">
+    <section id="hero" class="hero">
   <div class="hero__container hero__bg-image">
     <div class="hero__content">
       <h1 class="hero__title">
@@ -275,7 +275,7 @@
     <section class="section lessons__section" id="lessons">
   <div class="container lessons__container">
     <h2 class="lessons__title">
-      Our <span class="lessons__title-span">lessonss</span>
+      Our <span class="lessons__title-span">lessons</span>
     </h2>
     <p class="lessons__title-text">
       Our lessonss are carefully structured and interactive, designed to promote
@@ -319,7 +319,7 @@
   </div>
 </section>
 
-    <section class="section proposal">
+    <section id="proposal" class="section proposal">
   <div class="container proposal__wrapper-full">
     <h2 class="proposal__header-sec">
       Master the <span class="proposal__accent">Language</span> with Our English
@@ -446,7 +446,7 @@
   </div>
 </section>
 
-    <section class="section leave-section">
+    <section id="leave" class="section leave-section">
   <div class="container">
     <h2 class="section_title">
       Leave an
@@ -588,64 +588,80 @@
   </div>
 </section>
 
-    <section class="section reviews__section">
+    <section id="reviews" class="section reviews__section">
   <div class="container">
     <h2 class="section__title">
       What our <span class="section__title--span">students</span> say
     </h2>
 
     <p class="section__subtitle section__subtitle--center">
-      Hear from our students about their learning journey with us, as they share their experiences, progress, and the
-      transformative impact
+      Hear from our students about their learning journey with us, as they share
+      their experiences, progress, and the transformative impact
     </p>
 
     <div class="reviews__wrapper">
-      <ul class='reviews__list'>
-        <li class='reviews__item'>
+      <ul class="reviews__list">
+        <li class="reviews__item">
           <div class="reviews__avatar">
-            <img srcset="/english-excellence/assets/anna@1x-b886d9c4.png 1x, /english-excellence/assets/anna@2x-a0fc0c54.png 2x"
-             src="/assets/img/reviews/anna@1x" alt="girls avatar"
-             width="50" height="50" class="review-avatar_image">
+            <img
+              srcset="/english-excellence/assets/anna@1x-b886d9c4.png 1x, /english-excellence/assets/anna@2x-a0fc0c54.png 2x"
+              src="/assets/img/reviews/anna@1x"
+              alt="girls avatar"
+              width="50"
+              height="50"
+              class="review-avatar_image"
+            />
             <div class="reviews__avatar__text--container">
               <h3 class="reviews__avatar__name">Anna</h3>
               <p class="reviews__avatar__description">Student</p>
             </div>
           </div>
-          <p class='reviews__item--text'>
-            My experience at the language school has been nothing short of amazing. The teachers are dedicated and the learning
-            environment is stimulating. I feel more confident in my English skills.
+          <p class="reviews__item--text">
+            My experience at the language school has been nothing short of
+            amazing. The teachers are dedicated and the learning environment is
+            stimulating. I feel more confident in my English skills.
           </p>
         </li>
 
-        <li class='reviews__item'>
+        <li class="reviews__item">
           <div class="reviews__avatar">
-            <img srcset="data:image/png;base64,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 1x, /english-excellence/assets/mykhailo@2x-79ae6f4b.png 2x"
-             src="/assets/img/reviews/mykhailo@1x" alt="mans avatar"
-             width="50" class="review-avatar_image">
+            <img
+              srcset="data:image/png;base64,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 1x, /english-excellence/assets/mykhailo@2x-79ae6f4b.png 2x"
+              src="/assets/img/reviews/mykhailo@1x"
+              alt="mans avatar"
+              width="50"
+              class="review-avatar_image"
+            />
             <div class="reviews__avatar__text--container">
               <h3 class="reviews__avatar__name">Mykhailo</h3>
               <p class="reviews__avatar__description">Student</p>
             </div>
           </div>
-          <p class='reviews__item--text'>
-            The school offers a great balance of language theory and practical exercises. The personalized feedback from the
-            teachers has helped me improve my weak areas.
+          <p class="reviews__item--text">
+            The school offers a great balance of language theory and practical
+            exercises. The personalized feedback from the teachers has helped me
+            improve my weak areas.
           </p>
         </li>
 
-        <li class='reviews__item'>
+        <li class="reviews__item">
           <div class="reviews__avatar">
-            <img srcset="/english-excellence/assets/victoria@1x-b941f3ba.png 1x, /english-excellence/assets/victoria@2x-b41874bf.png 2x"
-             src="/assets/img/reviews/victoria@1x" alt="girls avatar"
-             width="50" class="review-avatar_image">
+            <img
+              srcset="/english-excellence/assets/victoria@1x-b941f3ba.png 1x, /english-excellence/assets/victoria@2x-b41874bf.png 2x"
+              src="/assets/img/reviews/victoria@1x"
+              alt="girls avatar"
+              width="50"
+              class="review-avatar_image"
+            />
             <div class="reviews__avatar__text--container">
               <h3 class="reviews__avatar__name">Victoria</h3>
               <p class="reviews__avatar__description">Student</p>
             </div>
           </div>
-          <p class='reviews__item--text'>
-            I love the dynamic and interactive teaching methods used here. It's a great place to learn English in a fun and
-            effective way. I have definitely seen a big improvement in my language skills.
+          <p class="reviews__item--text">
+            I love the dynamic and interactive teaching methods used here. It's
+            a great place to learn English in a fun and effective way. I have
+            definitely seen a big improvement in my language skills.
           </p>
         </li>
       </ul>
