@@ -17,6 +17,10 @@
   position: relative;
 }
 
+body.dark .section__title--span{
+  text-shadow: 2px 2px 1px black;
+}
+
 .section__title--span::after {
   content: '';
   position: absolute;
@@ -30,13 +34,17 @@
   background-color: var(--highlight-color);
 }
 
+body.dark .section__title--span::after {
+ background-color: var(--accent-color);
+}
+
 .section__subtitle {
   margin: 0 auto 40px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   text-align: center;
-  color: rgba(18, 20, 23, 0.50);
+  color: var(--secondary-text-color);
 
   @media (768px <= width) {
     margin: 0 auto 64px;
