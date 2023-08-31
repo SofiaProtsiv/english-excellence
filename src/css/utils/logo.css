@@ -1,0 +1,7 @@
+.logo--accent {
+  color: var(--accent-color);
+}
+
+.logo--light {
+  color: var(--white-color);
+}
