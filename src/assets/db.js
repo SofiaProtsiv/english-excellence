@@ -36,12 +36,12 @@ export const team = [{
   github: "https://github.com/MStartsev",
 },
 {
-  name: "Ilya Bond",
+  name: "Ilya Bondarchuk",
   role: "Front-End Developer",
   desc: "",
-  photo: "https://vyshnevyi-partners.com/wp-content/uploads/2016/12/no-avatar.png",
-  email: "mailto:rafaelavlucas@gmail.com",
-  linkedin: "https://www.linkedin.com/in/rafaelalucas/",
+  photo: "https://media.licdn.com/dms/image/D4D03AQHIwttOYmeTkg/profile-displayphoto-shrink_400_400/0/1670881971802?e=1698883200&v=beta&t=WsXc-n91DxGzrjSR7-RkwTraqlFd5q7fgLm_3SYe8Kc",
+  email: "mailto:hmlbond@gmail.com",
+  linkedin: "https://www.linkedin.com/in/ilyabondarchuk/",
   github: "https://github.com/cod3provider",
 },
 {
