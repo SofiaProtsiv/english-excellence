@@ -1,7 +1,7 @@
 import { team, icons } from '../assets/db';
 
 /* Team markup */
-const swiperWrapper = document.querySelector('.swiper-wrapper');
+const swiperWrapper = document.querySelector('.team__cards-wrapper');
 
 function addTeam() {
   if (!swiperWrapper) return;
@@ -11,7 +11,7 @@ function addTeam() {
   team.forEach(({ name, role, desc, photo, github, email, linkedin }) => {
 
     const template = `
-    <div class="swiper-slide">
+    <div class="team__cards__card-container">
       <div class="card">
         <span class="bg"></span>
         <span class="more"></span>
@@ -33,7 +33,7 @@ function addTeam() {
     </div>`;
 
     swiperWrapper.insertAdjacentHTML('beforeend', template);
-    document.querySelector(".swiper-slide").classList.add("show-more")
+    document.querySelector(".team__cards__card-container").classList.add("show-more")
   });
 
 };
@@ -77,7 +77,7 @@ icon.forEach(function (el) {
 });
 
 function followCursor(event) {
-  const pointer = event.currentTarget.closest(".swiper-slide").querySelector('.pointer'),
+  const pointer = event.currentTarget.closest(".team__cards__card-container").querySelector('.pointer'),
     index = event.currentTarget.dataset.index,
     sizeIcon = (60 * index) + 25;
 

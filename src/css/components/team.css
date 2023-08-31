@@ -1,14 +1,4 @@
-.module-team {
-  position: relative;
-}
-
-@media screen and (max-width: 767px) {
-  .module-team:before {
-    height: 250px;
-  }
-}
-
-.team-title {
+.team__title {
   text-align: center;
   margin-bottom: 16px;
   color: var(--primary-text-color);
@@ -16,10 +6,10 @@
   font-weight: 700;
   line-height: 1.17;
 }
-.team-title > span {
+.team__title > span {
   position: relative;
 }
-.team-title > span:before {
+.team__title > span:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -30,17 +20,17 @@
   z-index: -1;
 }
 @media screen and (max-width: 767px) {
-  .team-title:before {
+  .team__title:before {
     height: 5px;
     bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
-  .team-title {
+  .team__title {
     font-size: 32px;
   }
 }
-.team-subtitle {
+.team__subtitle {
   color: var(--secondary-text-color);
   text-align: center;
   font-size: 14px;
@@ -51,18 +41,18 @@
   margin: 0 auto;
   margin-bottom: 40px;
 }
-.team-cards {
+.team__cards {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.swiper-container {
+.team__cards-container {
   cursor: default;
 }
 /* Card */
-.swiper-wrapper {
+.team__cards-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -71,12 +61,12 @@
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-container {
+  .team__cards-container {
     max-width: 375px;
     width: 100%;
   }
 }
-.swiper-container .swiper-slide {
+.team__cards-container .team__cards__card-container {
   background-color: var(--var(--white-color));
   width: 320px;
   height: 340px;
@@ -85,7 +75,7 @@
   position: relative;
   transition: transform var(--transition-time) var(--transition-effect), box-shadow var(--transition-time) var(--transition-effect);
 }
-.swiper-container .swiper-slide:before {
+.team__cards-container .team__cards__card-container:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -95,7 +85,7 @@
   z-index: -1;
   transition: all var(--transition-time) var(--transition-effect);
 }
-.swiper-container .swiper-slide .card {
+.team__cards-container .team__cards__card-container .card {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -107,7 +97,7 @@
   border-radius: 30px;
   background-color: var(  --box-bg-color);
 }
-.swiper-container .swiper-slide .card .bg {
+.team__cards-container .team__cards__card-container .card .bg {
   position: absolute;
   width: 100%;
   height: 100px;
@@ -117,7 +107,7 @@
   background: var(--accent-color);
   z-index: 1;
 }
-.swiper-container .swiper-slide .card .more {
+.team__cards-container .team__cards__card-container .card .more {
   width: 24px;
   height: 24px;
   position: absolute;
@@ -132,8 +122,8 @@
   transition: all var(--transition-time) var(--transition-effect);
   border-radius: 100%;
 }
-.swiper-container .swiper-slide .card .more:before,
-.swiper-container .swiper-slide .card .more:after {
+.team__cards-container .team__cards__card-container .card .more:before,
+.team__cards-container .team__cards__card-container .card .more:after {
   width: 20px;
   height: 2px;
   background-color: var(--white-color);
@@ -142,11 +132,11 @@
   border-radius: 4px;
   transition: all var(--transition-time) var(--transition-effect);
 }
-.swiper-container .swiper-slide .card .more:after {
+.team__cards-container .team__cards__card-container .card .more:after {
   transform: rotate(90deg);
 }
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide .card .more {
+  .team__cards-container .team__cards__card-container .card .more {
     padding: 10px;
     top: 10px;
     right: 10px;
@@ -154,12 +144,12 @@
 }
 
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide .card .more:hover {
+  .team__cards-container .team__cards__card-container .card .more:hover {
     transform: scale(1);
     background-color: transparent;
   }
 }
-.swiper-container .swiper-slide .card .photo {
+.team__cards-container .team__cards__card-container .card .photo {
   width: 150px;
   height: 150px;
   border-radius: 100%;
@@ -169,8 +159,8 @@
   top: 20px;
   transition: all var(--transition-time) var(--transition-effect);
 }
-.swiper-container .swiper-slide .card .photo:before,
-.swiper-container .swiper-slide .card .photo:after {
+.team__cards-container .team__cards__card-container .card .photo:before,
+.team__cards-container .team__cards__card-container .card .photo:after {
   width: 100%;
   height: 100px;
   border-radius: 4px;
@@ -182,7 +172,7 @@
   top: 0;
 }
 
-.swiper-container .swiper-slide .card .photo:after {
+.team__cards-container .team__cards__card-container .card .photo:after {
   background: linear-gradient(
     140deg,
     var(--accent-color),
@@ -190,12 +180,12 @@
   );
   z-index: 2;
 }
-.swiper-container .swiper-slide .card .photo img {
+.team__cards-container .team__cards__card-container .card .photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.swiper-container .swiper-slide .card .text {
+.team__cards-container .team__cards__card-container .card .text {
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -206,19 +196,19 @@
   transform: translateY(50px);
   transition: all 0.3s ease;
 }
-.swiper-container .swiper-slide .card .text .name {
+.team__cards-container .team__cards__card-container .card .text .name {
   font-size: 20px;
   color: var(--primary-text-color);
   font-weight: 500;
 }
-.swiper-container .swiper-slide .card .text .role {
+.team__cards-container .team__cards__card-container .card .text .role {
   font-size: 14px;
   font-weight: 600;
   color: var(--secondary-text-color);
   letter-spacing: 0.8px;
   margin-top: 5px;
 }
-.swiper-container .swiper-slide .card .text .desc {
+.team__cards-container .team__cards__card-container .card .text .desc {
   color: var(--white-color);
   display: none;
   margin-top: 20px;
@@ -229,7 +219,7 @@
   font-weight: 400;
   line-height: 22px;
 }
-.swiper-container .swiper-slide .card .social {
+.team__cards-container .team__cards__card-container .card .social {
   z-index: 1;
   display: flex;
   align-items: center;
@@ -242,13 +232,13 @@
   border-radius: 0px 0px 4px 4px;
   transition: all var(--transition-time) var(--transition-effect);
 }
-.swiper-container .swiper-slide .card .social .icons {
+.team__cards-container .team__cards__card-container .card .social .icons {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.swiper-container .swiper-slide .card .social .icons .icon {
+.team__cards-container .team__cards__card-container .card .social .icons .icon {
   width: 25%;
   height: 24px;
   opacity: 0.5;
@@ -256,72 +246,72 @@
   cursor: pointer;
   transition: opacity var(--transition-time) var(--transition-effect);
 }
-body.dark .swiper-container .swiper-slide .card .social .icons .icon {
+body.dark .team__cards-container .team__cards__card-container .card .social .icons .icon {
   filter: brightness(2);
 }
-.swiper-container .swiper-slide .card .social .icons .icon:hover {
+.team__cards-container .team__cards__card-container .card .social .icons .icon:hover {
   opacity: 1;
 }
-.swiper-container .swiper-slide .card .social .icons .icon img {
+.team__cards-container .team__cards__card-container .card .social .icons .icon img {
   width: 100%;
   height: 100%;
 }
-.swiper-container .swiper-slide .card .social:hover .pointer {
+.team__cards-container .team__cards__card-container .card .social:hover .pointer {
   opacity: 1;
   bottom: 45px;
 }
-.swiper-container .swiper-slide:hover {
+.team__cards-container .team__cards__card-container:hover {
   transform: translateY(3px);
 }
-.swiper-container .swiper-slide:hover:before {
+.team__cards-container .team__cards__card-container:hover:before {
   box-shadow: 0px 10px 10px -10px var(--input-border-color);
 }
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide:hover {
+  .team__cards-container .team__cards__card-container:hover {
     transform: translateY(0px);
   }
-  .swiper-container .swiper-slide:hover:before {
+  .team__cards-container .team__cards__card-container:hover:before {
     box-shadow: 0px 20px 40px -20px var(--input-border-color);
   }
 }
-.swiper-container .swiper-slide:hover .card .photo {
+.team__cards-container .team__cards__card-container:hover .card .photo {
   transform: translateY(-5px);
 }
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide:hover .card .photo {
+  .team__cards-container .team__cards__card-container:hover .card .photo {
     transform: translateY(0px);
   }
 }
-.swiper-container .swiper-slide.show-more .card {
+.team__cards-container .team__cards__card-container.show-more .card {
   overflow: hidden;
 }
-.swiper-container .swiper-slide.show-more .card .more {
+.team__cards-container .team__cards__card-container.show-more .card .more {
   transform: rotate(45deg) scale(1);
 }
-.swiper-container .swiper-slide.show-more .card .more:hover {
+.team__cards-container .team__cards__card-container.show-more .card .more:hover {
   transform: rotate(45deg) scale(1.1);
 }
 @media screen and (max-width: 767px) {
-  .swiper-container .swiper-slide.show-more .card .more:hover {
+  .team__cards-container .team__cards__card-container.show-more .card .more:hover {
     transform: rotate(45deg) scale(1);
   }
 }
-.swiper-container .swiper-slide.show-more .card .social {
+.team__cards-container .team__cards__card-container.show-more .card .social {
   transform: translateY(55px);
 }
-.swiper-container .swiper-slide.show-more .card .text {
+.team__cards-container .team__cards__card-container.show-more .card .text {
   color: var(--white-color);
   transform: translateY(0px);
   transition: all var(--transition-time) var(--transition-effect);
 }
-.swiper-container .swiper-slide.show-more .card .text .name,
-.swiper-container .swiper-slide.show-more .card .text .role {
+.team__cards-container .team__cards__card-container.show-more .card .text .name,
+.team__cards-container .team__cards__card-container.show-more .card .text .role {
   color: var(--white-color);
 }
-.swiper-container .swiper-slide.show-more .card .text .desc {
+.team__cards-container .team__cards__card-container.show-more .card .text .desc {
   display: block;
 }
-.swiper-container .swiper-slide.show-more .card .photo {
+.team__cards-container .team__cards__card-container.show-more .card .photo {
   width: 100%;
   height: 100%;
   top: -16px;
@@ -330,29 +320,29 @@ body.dark .swiper-container .swiper-slide .card .social .icons .icon {
   transform: translateY(0px);
   transition: all var(--transition-time) var(--transition-effect);
 }
-.swiper-container .swiper-slide.show-more .card .photo:before {
+.team__cards-container .team__cards__card-container.show-more .card .photo:before {
   height: 100%;
   opacity: 0.5;
 }
-.swiper-container .swiper-slide.show-more .card .photo:after {
+.team__cards-container .team__cards__card-container.show-more .card .photo:after {
   height: 100%;
   opacity: 0.8;
   border-radius: 4px;
 }
-.swiper-container .swiper-slide.show-more .card .photo img {
+.team__cards-container .team__cards__card-container.show-more .card .photo img {
   filter: grayscale(100%);
 }
-.swiper-container .swiper-slide.show-more .card .photo:hover {
+.team__cards-container .team__cards__card-container.show-more .card .photo:hover {
   transform: translateY(0px);
 }
-.swiper-container .swiper-slide.show-more .card .bg {
+.team__cards-container .team__cards__card-container.show-more .card .bg {
   width: 100%;
   height: 100%;
   border-radius: 4px;
 }
-.swiper-container .swiper-slide.show-more .card .bg:before {
+.team__cards-container .team__cards__card-container.show-more .card .bg:before {
   opacity: 0.5;
 }
-.swiper-container .swiper-slide.show-more .card .bg:after {
+.team__cards-container .team__cards__card-container.show-more .card .bg:after {
   opacity: 0.8;
 }
