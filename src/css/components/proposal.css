@@ -22,6 +22,7 @@
         line-height: 1.05;
         width: 295px;
         letter-spacing: 0em;
+        padding: 0;
     }
 
     .proposal__wrapper-full .proposal__accent {
@@ -38,7 +39,7 @@
         margin-top: 65px;
         padding-top: 40px;
         padding-left: 19px;
-        z-index: 9999;
+        z-index: 10;
     }
 
     .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
@@ -49,7 +50,7 @@
     }
 
     .proposal__wrapper-full .proposal__header-th {
-        color: var(--primary-text-color);
+        color: var(--const-primary-text-color);
         font-size: 20px;
         font-weight: 700;
         line-height: 1.2;
@@ -83,12 +84,14 @@
     }
 
     .proposal__wrapper-full .proposal__paragraph-eng-pack {
-        color: var(--primary-text-color);
+        color: var(--const-primary-text-color);
         font-size: 14px;
         font-weight: 700;
         line-height: 1.43;
         letter-spacing: -0.02em;
+        padding: 0;
     }
+
 
     .proposal__first-extrabg-wrapper .proposal__first-extrabg-image {
         display: none;
@@ -118,7 +121,7 @@
     }
 
     .proposal__second-extrabg {
-        z-index: 9997;
+        z-index: 7;
         position: absolute;
         display: flex;
         max-width: 295px;
@@ -133,7 +136,7 @@
     }
 
     .proposal__third-extrabg {    
-        z-index: 9996;
+        z-index: 6;
         position: absolute;
         display: flex;
         max-width: 295px;
@@ -175,6 +178,7 @@
         width: 640px;
         margin-left: 14px;
         margin-right: 14px;
+        padding: 0;
         
     }
 
@@ -192,7 +196,7 @@
         padding-left: 32px;
         padding-bottom: 63px;
         margin-top: 83px;
-        z-index: 9999;
+        z-index: 10;
         
     }
 
@@ -204,11 +208,12 @@
     }
 
     .proposal__wrapper-full .proposal__header-th {
-        color: var(--primary-text-color);
+        color: var(--const-primary-text-color);
         font-size: 40px;
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: -0.02em;
+        padding: 0;
     }
 
     .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
@@ -242,11 +247,12 @@
     }
 
     .proposal__wrapper-full .proposal__paragraph-eng-pack {
-        color: var(--primary-text-color);
+        color: var(--const-primary-text-color);
         font-size: 20px;
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: -0.02em;
+        padding: 0;
     }
 
     .proposal__first-extrabg-wrapper .proposal__first-extrabg-image {
@@ -278,7 +284,7 @@
     }
 
     .proposal__second-extrabg {
-        z-index: 9997;
+        z-index: 7;
         position: absolute;
         display: flex;
         max-width: 668px;
@@ -293,7 +299,7 @@
     }
 
     .proposal__third-extrabg {    
-        z-index: 9996;
+        z-index: 6;
         position: absolute;
         display: flex;
         max-width: 668px;
@@ -333,6 +339,7 @@
         line-height: 1.17;
         width: 776px;
         letter-spacing: 0em;
+        padding: 0;
     }
 
     .proposal__wrapper-full .proposal__accent {
@@ -349,7 +356,7 @@
         padding-left: 64px;
         padding-bottom: 63px;
         margin-top: 133px;
-        z-index: 9999;
+        z-index: 10;
     }
 
     .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
@@ -368,11 +375,12 @@
     }
 
     .proposal__wrapper-full .proposal__header-th {
-        color: var(--primary-text-color);
+        color: var(--const-primary-text-color);
         font-size: 40px;
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: -0.02em;
+        padding: 0;
     }
 
     .proposal__first-extrabg-wrapper .proposal__list-eng-pack {
@@ -402,11 +410,12 @@
     }
 
     .proposal__wrapper-full .proposal__paragraph-eng-pack {
-        color: var(--primary-text-color);
+        color: var(--const-primary-text-color);
         font-size: 20px;
         font-weight: 700;
         line-height: 1.2;
         letter-spacing: -0.02em;
+        padding: 0;
     }
 
     .proposal__first-extrabg-wrapper .proposal__first-extrabg-image {
@@ -438,7 +447,7 @@
     }
 
     .proposal__second-extrabg {
-        z-index: 9997;
+        z-index: 7;
         position: absolute;
         display: flex;
         max-width: 1050px;
@@ -453,7 +462,7 @@
     }
 
     .proposal__third-extrabg {
-        z-index: 9996;
+        z-index: 6;
         position: absolute;
         display: flex;
         max-width: 1011px;
