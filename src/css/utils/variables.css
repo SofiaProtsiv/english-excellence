@@ -18,6 +18,7 @@
   --white-color: #ffffff;
   --white-color-half-alpha: rgba(255, 255, 255, 0.5);
   --header-bg-color: rgba(255, 255, 255, 0.7);
+  --about-us-card-bg-color: #F3F5F6;
 
   /* Breakpoints */
   --mobile: 375px;
