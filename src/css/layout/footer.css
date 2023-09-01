@@ -21,23 +21,9 @@
   }
 }
 
-
 .footer__container.container {
   padding-bottom: 40px;
 }
-
-/*  */
-/* @media screen and (min-width: 768px) and (max-width: 1279px) { */
-/* .footer__container.container { */
-/* padding-bottom: 110px; */
-/* } */
-/* } */
-/*  */
-/* @media screen and (min-width: 1280px) { */
-/* .footer__container.container { */
-/* padding-bottom: 64px; */
-/* } */
-/* } */
 
 .footer__container {
   display: block;
@@ -45,7 +31,6 @@
   color: var(--footer-primary-text-color);
   padding-top: 64px;
   padding-bottom: 64px;
-  /* border-bottom: 1px solid var(--social-border-color); */
   padding-bottom: 110px;
 }
 
@@ -54,8 +39,6 @@
     display: flex;
     justify-content: space-between;
     color: var(--footer-primary-text-color);
-    /* padding-top: 64px; */
-    /* padding-bottom: 64px; */
   }
 }
 
@@ -91,18 +74,13 @@
 .footer__contact__list__item {
   display: flex;
   flex-direction: column;
-  color: var(--footer-secondary-text-color);
-  font-size: 14px;
-  /* font-style: normal; */
   font-weight: 400;
   line-height: 1.28571;
   letter-spacing: -0.02em;
 }
 
 .footer__contact__list__item a {
-  color: var(--footer-primary-text-color);
   font-size: 14px;
-  /* font-style: normal; */
   font-weight: 600;
   line-height: 1.29;
   text-decoration: none;
@@ -135,16 +113,16 @@
 }
 
 .footer__social__link {
-  padding: 8px;
   display: flex;
   justify-content: center;
+  padding: 8px;
   border-radius: 10px;
   border: 1px solid var(--social-border-color);
   transition: border var(--transition-effect), var(--transition-time);
 }
 
 .footer__social__link:hover .footer__social__icon,
-.sfooter__social__link:focus .footer__social__icon {
+.footer__social__link:focus .footer__social__icon {
   fill: var(--accent-color);
 }
 
@@ -162,25 +140,10 @@
 /* For the footer line and copyright and terms */
 .copyright-privacy-terms {
   display: block;
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
   border-top: 1px solid var(--social-border-color);
   padding-top: 10px;
 }
 
-/* tablett+ */
-/* @media screen and (min-width: 768px) { */
-/* .copyright-privacy-terms { */
-/* display: flex; */
-/* flex-direction: column; */
-/* align-items: flex-start; */
-/*  */
-/* padding-top: 10px; */
-/* width: 100%; */
-/* } */
-/* } */
-/*  */
-/*  */
 .top-row {
   display: block;
   justify-content: space-between;
@@ -223,7 +186,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.125rem;
-  /* 128.571% */
   letter-spacing: -0.0175rem;
   opacity: 0.9;
 }
