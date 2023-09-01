@@ -4,13 +4,13 @@
   gap: 32px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279.98px) {
   .lessons__menu {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .lessons__menu {
     grid-template-columns: 1fr;
   }
@@ -25,13 +25,13 @@
   border: 1px solid var(--accent-color);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279.98px) {
   .lessons__items {
     padding: 32px 16px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .lessons__items {
     padding: 32px 20px;
   }
