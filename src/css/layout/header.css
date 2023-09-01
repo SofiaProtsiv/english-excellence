@@ -100,6 +100,7 @@
 }
 
 .header__btn svg {
+  cursor: pointer;
   stroke: var(--primary-text-color);
 }
 .open__icon {

@@ -30,11 +30,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  transform: translateY(0%);
+  transform: translateX(0%);
   transition: transform var(--transition-effect), var(--transition-time);
 }
-.modal.backdrop.is-hidden {
-  transform: translateY(-100%);
+.backdrop.is-hidden .modal{
+  transform: translateX(100%);
 }
 
 .modal__nav__list {
@@ -54,6 +54,7 @@
 }
 .button-close {
   margin-left: auto;
+  cursor: pointer;
 }
 
 .modal__social__list {
@@ -68,6 +69,9 @@
   border-radius: 10px;
 
   border: 1px solid var(--white-color);
+}
+.modal__social__link:hover{
+  opacity: 0.5;
 }
 
 .modal__social__icon {
