@@ -1,5 +1,3 @@
-console.log(window.location.pathname);
-
 if (
   window.location.pathname.includes('/') ||
   window.location.pathname.includes('/index.html')

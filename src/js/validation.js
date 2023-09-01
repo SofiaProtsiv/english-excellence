@@ -1,6 +1,4 @@
-function onSubmit(event) {
-  event.preventDefault();
-}
+const form = document.querySelector('.leave__form');
 
 function onFocus(event) {
   event.target.value
@@ -14,12 +12,17 @@ function onBlur(event) {
     : (event.target.style.background = 'red');
 }
 
-document.querySelector('form').addEventListener('submit', onSubmit);
-[...document.querySelector('.leave-section-form').elements].forEach(el => {
-  console.log(el);
-  if (el.name) {
-    el.addEventListener('input', onFocus);
-    el.addEventListener('focus', onFocus);
-    el.addEventListener('blur', onBlur);
-  }
-});
+if (form) {
+  document.querySelector('.leave__form').addEventListener('submit', event => {
+    event.preventDefault();
+    event.currentTarget.reset();
+  });
+
+  // [...form.elements].forEach(el => {
+  //   if (el.name) {
+  //     el.addEventListener('input', onFocus);
+  //     el.addEventListener('focus', onFocus);
+  //     el.addEventListener('blur', onBlur);
+  //   }
+  // });
+}

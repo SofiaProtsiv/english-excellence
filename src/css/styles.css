@@ -1,6 +1,6 @@
 /* Base */
 @import url('base/reset.css');
-
+@import url('base/normalize.css');
 /* Utils */
 @import url('utils/variables.css');
 
@@ -82,6 +82,7 @@ body::-webkit-scrollbar {
 body {
   background-color: var(--main-bg-color);
   transition: var(--transition-time) var(--transition-effect);
+  overflow-x: hidden;
 }
 
 .visually-hidden {
