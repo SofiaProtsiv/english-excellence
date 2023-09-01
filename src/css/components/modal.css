@@ -36,7 +36,11 @@
 .backdrop.is-hidden .modal{
   transform: translateX(100%);
 }
-
+@media screen and (max-width: 767.98px) {
+  .modal {
+    width: 65%;
+  }
+}
 .modal__nav__list {
   display: flex;
   flex-direction: column;
