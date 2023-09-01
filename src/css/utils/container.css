@@ -18,7 +18,12 @@
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: var(--desktop);
-    padding: 0 128px;
+    /* width: var(--desktop); */
+    /* padding: 0 128px; */
+
+    width: calc(var(--desktop) - 128px);
+    padding: 0;
+    margin-inline: auto;
+    max-width: 1152px;
   }
 }
