@@ -21,9 +21,8 @@
     /* width: var(--desktop); */
     /* padding: 0 128px; */
 
-    width: calc(var(--desktop) - 128px);
+    width: calc(var(--desktop) - 256px);
     padding: 0;
     margin-inline: auto;
-    max-width: 1152px;
   }
 }
