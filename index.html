@@ -401,11 +401,22 @@
     <ul class="teachers-list list">
       <li class="teacher-list__item">
         <div class="avatar">
-          <img
-            srcset="/english-excellence/assets/Maria@2x-7bb51b42.jpg 2x"
-            src="/english-excellence/assets/Maria-7bfad14f.jpg"
-            alt="Maria"
-          />
+          <picture>
+            <source
+              srcset="data:image/webp;base64,UklGRi4HAABXRUJQVlA4ICIHAABwLQCdASqWAJYAPpFAm0klo6KiKzQq0LASCWUIkCeDf9/PSrT1+oDcMm/B4fOSbqy4TF4RgdM4dfODQp+WLLhzMXDKhw0lq0QQU5WhRFT7paaK7LsZxGj90FuRAcre6iS4PGW5NWXHV/u9ZjaZtbseosHJe/VQ8bRfJYd9zZo7/7gqwIBCOSfl6K//Ln+/5rB33tQ738glxcvdquS8bSjO4dgVlYP7Z39dfYuZv9K6d35ueDf5obeg+/v/uJtFbvH7E+285P6z4B7gnpMLunNPYqtYG5RKF4Fqq1wFytcj853S97mENN3Du3+MEephMMm7NsFHo9Mff5GPzvNsc3MDcM5eZH6xRjmi8bWmtUPrFsKBYjD37CbUmGGBYMattRsaxmiAQJr+Ay+gKtmWSZKaqEyWWFjNEI/zXTY4uoYy1udlL9Z4waJX/ytswn6VfxP9YIjbtb/Z+3QkRkoSVvKKq4omOVh7qntyKrTZU5AsXzNuJAAA/skH8mjqrPvKitNsuTeJpE/zejr3qcDh20jRyomkEMvi1+BNxqjTS8Jips/urAFdm9zAhcLlCEp5Z4XwibPhpKsXJV5kupXGLj1MvX/mX7F4q/ltretEvD0+nx/8ZH3nl0f783xZVyS0+JPWGWo427Xr33YXjBf9MYq9o+huc9PniBdL6Fk4XzWI01oNt1vaagXStgIPzmJQwUzJQQbsD2vUvceg6VKc74GcKY3nMBRLxL7v9FEU/+i0I+6fEQaiFGfBVmMOOkzKwq3W2ucTRPS/DRA8eCgVgnmZleAzw4fDCkRRyQ8SVWYVBos7vDHLNCC+9vwLAKg8jp6EvO7KUxrJY8ONmXlBDQ7Q9LjIoP6lB7Y/4OQP4jnlgLXaNyXmpiDUv0pLVPzr9UDpsr/iYy3sQEEshQw4It+5XMBBr9XQoE9HD2qyP6TSsH10PGkY5W9JQKIoZACv1F/sg0N/GjTtGMDolGphSu+ACK0oAwbhDkgB7/UCKLL/xWnFSXZgwmf5s7gwJ6YUc9RDIgQColJFDATgYed9TjzHZ7dldddwzt1C34d5Bu4t/tkcNq0jTm2bYf5UlIMH/vqFHHnU3s46ck9hqwNC85oohI9QZaFJPeLd8ArVdvNM9Cfm8ebwpG5pWtFncs+DttC2Qt/r5Pb4EAowOgMz6uSmR0/cSisrtHVRe81r6dx+k+cCsOVvQy5hZia9I66opkyXgVYHFT8hLDAaYXE+IGCaAViFloZhWx6LurCEshfbrOsx+zzupFhRU7ao++gyNfI0+Lq6TGXO6/8C21RXjkYzR0ZupsU85euMubFg/roNmgprm3uJ9dv+zzoHyTc90hBOXt9YuASryRiZiJOjyf+TsjjFG3qMY1H24Qaamr1pFlk94l+cxFE484r2bo3kM4SP0LLDC5ItIEfBnTyjd7CizHP04GFeIgK4COzIA1jbJGH5nEIIVd/FaC83Pyc41Mipada0n3xAcx/q7PWNBIO7RebhzzRIeD3q5UBMqpeRlUQM4TQCCswnzUC1yL44OeoQkni+rAiIJkKo28oINh7c/KPNCREg3qXzYShAUy+N44P/80+480dNLAPFMkubJxZbpViH1kweaMrkuc/KVF830QvvwC/qXUwmj6+aBlu4rS24x+e+ywW51sjbo8UqaOWUDUT2ziEAQgg6dafc94aK422nh8e8oEyWfQkLI7/hvmP2WmS62VuyaVqzK+Os1EEjT2bAQDYaI5QlNvLb15nUJZMNtWWh3eQ2tHoPmpS3zsszE1Bt0/BbaagnfEMPWCA8ZcbGnB1+5czxn1YHcRrGm25wKJM+JO9yQ/y0FcriSAD5K9VgKvZgo6D5TgyRU9Nf035dLXERufqRLK+djbh1GJ0RVCgBCQ0cd9TfItsPZpHjcXfEaqO7SNVCu5D5hMKVxiFfLla7bjff/ZoJwPbQj71coegmveuRxWeqhIGnY953O+bjpfBwM79Fhx5eVkmbv9AkvUwdftm8h2Gy+3fCePDkU1/5Gh0gzdCvtCT1PuOMhW2DYyqg/GJDRtv2INvEUwzSv0QoARxm1Am1ThJ8icYNrig10pCZXK2AEhKECCOt2vQDu0gw52TdHalW0CObj22Zr5YWQ9/kCHVCoJo8F+8VOndVcsZxyvFiFFxqkjE7o7DEaAT8CVkHEDxeBKhlgABQAsuM1WYCZCcxvwg4SkWJ76ipGT5beEPFMPyVeL7ju4/u0OMPcZq5FzPaspbQHYvGfKi2/Nn9rXl/sLQHhg1CMXgJ940edpUYL6gUeHUVFgkq1/VeiRPs2Ukosxmr4ZVPAELLGD9gqpj++bdCrN+EWnJTTizhX+VzgSUy2Lqzw737pz+uLWyPOQOPPCWds9lWUR7sXRcBJuodz1IDv5a8q0tQtUenPPg6gnNGezPcbKVjzBOw03iYIsCxPAAAAA== 1x, data:image/webp;base64,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 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="/english-excellence/assets/Maria@2x-1da8e6c2.jpg 2x"
+              type="image/jpeg"
+            />
+            <img
+              src="/english-excellence/assets/Maria-ca20d1f5.jpg"
+              alt="Maria"
+              width="150"
+              height="150"
+            />
+          </picture>
         </div>
         <p class="name">Maria</p>
         <p class="skills">
@@ -415,11 +426,22 @@
       </li>
       <li class="teacher-list__item">
         <div class="avatar">
-          <img
-            srcset="/english-excellence/assets/Artem@2x-0644b692.jpg 2x"
-            src="/english-excellence/assets/Artem-572839d6.jpg"
-            alt="Artem"
-          />
+          <picture>
+            <source
+              srcset="data:image/webp;base64,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 1x, /english-excellence/assets/Artem@2x-29d6931e.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="/english-excellence/assets/Artem@2x-a658e703.jpg 2x"
+              type="image/jpeg"
+            />
+            <img
+              src="/english-excellence/assets/Artem-1088c599.jpg"
+              alt="Artem"
+              width="150"
+              height="150"
+            />
+          </picture>
         </div>
         <p class="name">Artem</p>
         <p class="skills">
@@ -429,11 +451,22 @@
       </li>
       <li class="teacher-list__item">
         <div class="avatar">
-          <img
-            srcset="/english-excellence/assets/Ilona@2x-0b291f14.jpg 2x"
-            src="/english-excellence/assets/Ilona-80cf0d1d.jpg"
-            alt="Ilona"
-          />
+          <picture>
+            <source
+              srcset="data:image/webp;base64,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 1x, /english-excellence/assets/Ilona@2x-51555daa.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="/english-excellence/assets/Ilona@2x-02a02b98.jpg 2x"
+              type="image/jpeg"
+            />
+            <img
+              src="/english-excellence/assets/Ilona-18e8ca13.jpg"
+              alt="Ilona"
+              width="150"
+              height="150"
+            />
+          </picture>
         </div>
         <p class="name">Ilona</p>
         <p class="skills">
@@ -444,11 +477,22 @@
       </li>
       <li class="teacher-list__item">
         <div class="avatar">
-          <img
-            srcset="/english-excellence/assets/Volodymyr@2x-802cf96d.jpg 2x"
-            src="/english-excellence/assets/Volodymyr-59f2ea9a.jpg"
-            alt="Volodymyr"
-          />
+          <picture>
+            <source
+              srcset="data:image/webp;base64,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 1x, /english-excellence/assets/Volodymyr@2x-ba171863.webp 2x"
+              type="image/webp"
+            />
+            <source
+              srcset="/english-excellence/assets/Volodymyr@2x-f2980187.jpg 2x"
+              type="image/jpeg"
+            />
+            <img
+              src="/english-excellence/assets/Volodymyr-9add3918.jpg"
+              alt="Volodymyr"
+              width="150"
+              height="150"
+            />
+          </picture>
         </div>
         <p class="name">Volodymyr</p>
         <p class="skills">
