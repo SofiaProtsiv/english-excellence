@@ -1,9 +1,9 @@
-.leave-section .section__title {
+.leave .section__title {
   margin-bottom: 14px;
   font-weight: 600;
 }
 
-.leave-section .section__subtitle {
+.leave .section__subtitle {
   margin-bottom: 20px;
   color: var(--secondary-text-color);
 }
@@ -12,7 +12,7 @@
   display: none;
 }
 
-.leave-section__input {
+.leave__input {
   width: 100%;
   border-radius: 12px;
   border: 1px solid var(--input-border-color);
@@ -28,11 +28,11 @@
   transition: border-color var(--transition-time) var(--transition-effect);
 }
 
-.leave-section__input:focus {
+.leave__input:focus {
   border-color: var(--accent-color);
 }
 
-.leave-section__textarea {
+.leave__textarea {
   width: 100%;
   height: 94px;
   border-radius: 12px;
@@ -50,7 +50,7 @@
   transition: border-color var(--transition-time) var(--transition-effect);
 }
 
-.leave-section__textarea:focus {
+.leave__textarea:focus {
   border-color: var(--accent-color);
 }
 
@@ -97,7 +97,7 @@
   fill: var(--accent-color);
 }
 
-.leave-section-btn-descr {
+.leave__btn-descr {
   color: var(--secondary-text-color);
   font-family: Manrope;
   font-size: 12px;
@@ -106,7 +106,7 @@
   line-height: 16px;
 }
 
-.leave-section-btn {
+.leave__btn {
   width: 100%;
   padding: 14px 0;
   text-align: center;
@@ -123,12 +123,12 @@
   transition: background-color var(--transition-time) var(--transition-effect);
 }
 
-.leave-section-btn:hover,
-.leave-section-btn:focus {
-  background-color: var(--accent-color);
+.leave__btn:hover,
+.leave__btn:focus {
+  background-color: var(--dark-hover-color);
 }
 
-.leave-section-rb-fieldset {
+.leave__rb__fieldset {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -137,7 +137,7 @@
   border: none;
 }
 
-.leave-section-rb-title {
+.leave__rb__title {
   color: var(--primary-text-color);
   font-family: Manrope;
   font-size: 18px;
@@ -148,51 +148,51 @@
   margin-bottom: 14px;
 }
 
-.leave-section__rb-box {
+.leave__rb-box {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 @media screen and (min-width: 768px) {
-  .leave-section .section__title {
+  .leave .section__title {
     margin-bottom: 16px;
     font-weight: 700;
   }
 
-  .leave-section .section__subtitle {
+  .leave .section__subtitle {
     margin-bottom: 64px;
     width: 586px;
   }
 
-  .leave-section-form {
+  .leave__form {
     padding: 0 102px;
   }
 
-  .leave-section-btn {
+  .leave__btn {
     padding: 16px 0;
     font-size: 18px;
     line-height: 28px;
   }
 
-  .leave-section-btn-descr {
+  .leave__btn__descr {
     font-size: 14px;
     line-height: 24px;
   }
 
-  .leave-section__input {
+  .leave__input {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .leave-section__textarea {
+  .leave__textarea {
     height: 104px;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .leave-section__rb-box {
+  .leave__rb-box {
     flex-direction: row;
     gap: 16px;
   }
@@ -209,14 +209,14 @@
     top: 3px;
   }
 
-  .leave-section-rb-fieldset {
+  .leave__rb__fieldset {
     gap: 16px;
     margin-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .leave-content-group {
+  .leave__content-group {
     display: flex;
     gap: 24px;
   }
@@ -255,53 +255,53 @@
     padding: 0 24px;
   }
 
-  .leave-section-form {
+  .leave__form {
     padding: 0;
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  .leave-section .section__title {
+  .leave .section__title {
     margin-bottom: 16px;
   }
 
-  .leave-section .section__subtitle {
+  .leave .section__subtitle {
     width: 709px;
     margin-bottom: 64px;
   }
 
-  .leave-section-btn {
+  .leave__btn {
     padding: 16px 0;
     font-size: 18px;
     line-height: 28px;
   }
 
-  .leave-section-btn-descr {
+  .leave__btn__descr {
     font-size: 14px;
     line-height: 24px;
   }
 
-  .leave-section__input {
+  .leave__input {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .leave-section__textarea {
+  .leave__textarea {
     height: 129px;
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .leave-section-rd-box {
+  .leave__rd-box {
     flex-direction: row;
     gap: 16px;
   }
 
-  .leave-section-rb-title {
+  .leave__rb__title {
     margin-bottom: 16px;
   }
 
-  .leave-section-rb-fieldset {
+  .leave__rb__fieldset {
     gap: 16px;
     margin-bottom: 32px;
   }
