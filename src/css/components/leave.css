@@ -5,7 +5,7 @@
 
 .leave-section .section__subtitle {
   margin-bottom: 20px;
-  color: rgba(18, 20, 23, 0.8);
+  color: var(--secondary-text-color);
 }
 
 .leave__adv-box {
@@ -69,7 +69,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 2px solid rgba(18, 20, 23, 0.2);
+  border: 2px solid var(--input-border-color);
   box-sizing: content-box;
   position: absolute;
   top: 1px;
@@ -162,7 +162,6 @@
 
   .leave-section .section__subtitle {
     margin-bottom: 64px;
-    color: var(--secondary-text-color);
     width: 586px;
   }
 
@@ -196,6 +195,18 @@
   .leave-section__rb-box {
     flex-direction: row;
     gap: 16px;
+  }
+
+  .leave__radio-btn__label {
+    font-size: 18px;
+  }
+
+  .leave__radio-btn__icon-check {
+    top: 0;
+  }
+
+  .leave__radio-btn__icon-uncheck {
+    top: 3px;
   }
 
   .leave-section-rb-fieldset {
