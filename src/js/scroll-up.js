@@ -1,13 +1,13 @@
 const scrollUpButton = document.querySelector('.scroll-up');
 
-if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
   scrollUpButton.classList.remove('is-hidden');
 }
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 400 ||
-    document.documentElement.scrollTop > 400
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
   ) {
     scrollUpButton.classList.remove('is-hidden');
   } else {
@@ -20,6 +20,5 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// window.addEventListener('scroll', _.throttle(scrollFunction, 300));
 window.addEventListener('scroll', scrollFunction);
 scrollUpButton.addEventListener('click', topFunction);

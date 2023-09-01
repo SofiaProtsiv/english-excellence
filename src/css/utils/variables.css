@@ -1,20 +1,24 @@
 :root {
   /* Colors */
   --primary-text-color: #121417;
+  --const-primary-text-color: #121417;
   --secondary-text-color: rgba(18, 20, 23, 0.5);
   --light-text-color: rgba(255, 255, 255, 0.7);
-  --footer-light-text-color: rgba(255, 255, 255, 0.6);
   --accent-color: #4dc274;
   --light-accent-color: #d4fde1;
   --highlight-color: #bee8cc;
   --box-bg-color: #f3f5f6;
   --input-border-color: rgba(18, 20, 23, 0.1);
   --button-border-color: rgba(255, 255, 255, 0.4);
-  --darkgreen-button-color: #38AE5F;
+  --dark-hover-color: #38ae5f;
+  --light-hover-color: #fff;
   --bg-accent-color: rgba(255, 255, 255, 0.5);
   --footer-bg-color: #121417;
   --main-bg-color: #ffffff;
   --white-color: #ffffff;
+  --footer-primary-text-color: #fff;
+  --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
+  --social-border-color: rgba(255, 255, 255, 0.1);
   --white-color-half-alpha: rgba(255, 255, 255, 0.5);
   --header-bg-color: rgba(255, 255, 255, 0.7);
 
@@ -34,25 +38,14 @@
 
   /* Backdrop */
   --base-font: 'Manrope', sans-serif;
-
-  /* Section */
-  --section-padding-bottom-mobile: 80px;
-  --section-padding-bottom-tablet: 100px;
-  --section-padding-bottom-desktop: 150px;
-
-  --section-about-padding-top-mobile: 80px;
-  --section-about-padding-top-tablet: 100px;
-  --section-about-padding-top-desktop: 96px;
 }
 
-
-body.dark{
+body.dark {
   --primary-text-color: #f5f5f5;
   --secondary-text-color: rgba(255, 255, 255, 0.5);
   --light-text-color: rgba(255, 255, 255, 0.7);
   --box-bg-color: #3e3e3e;
   --input-border-color: rgba(200, 200, 200, 0.1);
-  --button-border-color: rgba(45, 45, 45, 0.4);
   --main-bg-color: #262c27;
-    --header-bg-color: rgba(	38, 44, 39, 0.7);
+  --header-bg-color: rgba(38, 44, 39, 0.7);
 }

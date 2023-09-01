@@ -17,7 +17,7 @@
   border-radius: 12px;
   border: 1px solid var(--input-border-color);
   padding: 16px 18px;
-  color: var(--primary-text-color);
+  color: var(--const-primary-text-color);
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -38,7 +38,7 @@
   border-radius: 12px;
   border: 1px solid var(--input-border-color);
   padding: 16px 18px;
-  color: var(--primary-text-color);
+  color: var(--const-primary-text-color);
   font-family: Manrope;
   font-size: 14px;
   font-style: normal;
@@ -57,7 +57,7 @@
 .leave__radio-btn__icon-check {
   padding: 2px;
   box-sizing: content-box;
-  fill: transparent;
+  fill: var(--social-border-color);
   position: absolute;
   top: -2px;
   left: -32px;
@@ -125,7 +125,7 @@
 
 .leave-section-btn:hover,
 .leave-section-btn:focus {
-  background-color: #38ae5f;
+  background-color: var(--accent-color);
 }
 
 .leave-section-rb-fieldset {
