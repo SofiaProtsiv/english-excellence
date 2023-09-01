@@ -7,6 +7,7 @@
 .about-us__wrapper {
   display: flex;
   gap: 20px;
+  justify-content: center;
 
   @media (max-width: 1279.98px) {
     flex-direction: column;
