@@ -22,7 +22,7 @@
   }
 }
 
-.reviews__item:nth-child(3) {
+/* .reviews__item:nth-child(3) {
   @media (width < 1280px) {
     display: none;
   }
@@ -36,7 +36,7 @@
   @media (width < 768px) {
     display: none;
   }
-}
+} */
 
 .reviews__avatar {
   display: flex;

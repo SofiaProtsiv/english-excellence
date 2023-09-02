@@ -26,5 +26,27 @@
 
     <script type="module" src="/main.js"></script>
     <script type="module" src="js/validation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script>
+      // Отримати елемент контейнера зі списком відгуків
+      const listContainer = document.querySelector('.reviews__list-container');
+
+      // Ініціалізувати Hammer.js на контейнері
+      const mc = new Hammer(listContainer);
+
+      // Включити горизонтальний свайп
+      mc.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
+      // Обробник свайпу вправо
+      mc.on('swiperight', function() {
+        listContainer.scrollLeft -= 200; // Змініть значення, якщо потрібно змінити відстань прокрутки
+      });
+
+      // Обробник свайпу вліво
+      mc.on('swipeleft', function() {
+        listContainer.scrollLeft += 200; // Змініть значення, якщо потрібно змінити відстань прокрутки
+      });
+    </script>
+
   </body>
 </html>
