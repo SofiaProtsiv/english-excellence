@@ -21,6 +21,7 @@
   --social-border-color: rgba(255, 255, 255, 0.1);
   --white-color-half-alpha: rgba(255, 255, 255, 0.5);
   --header-bg-color: rgba(255, 255, 255, 0.7);
+  --error-color: rgb(255, 0, 0);
 
   /* Breakpoints */
   --mobile: 375px;

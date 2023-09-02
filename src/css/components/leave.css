@@ -12,6 +12,10 @@
   display: none;
 }
 
+.leave__form__group {
+  margin-bottom: 18px;
+}
+
 .leave__input {
   width: 100%;
   border-radius: 12px;
@@ -23,7 +27,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  margin-bottom: 18px;
   outline: none;
   transition: border-color var(--transition-time) var(--transition-effect);
 }
@@ -44,7 +47,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
-  margin-bottom: 20px;
   outline: none;
   resize: none;
   transition: border-color var(--transition-time) var(--transition-effect);
@@ -309,4 +311,14 @@
   .leave__adv-box img {
     margin-bottom: 12px;
   }
+}
+
+.error {
+  border: 1px solid var(--error-color);
+}
+.error-message {
+  color: var(--error-color);
+  font-size: 12px;
+  font-weight: 600;
+  display: none;
 }

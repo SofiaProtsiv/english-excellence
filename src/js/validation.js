@@ -1,28 +1,94 @@
 const form = document.querySelector('.leave__form');
 
-function onFocus(event) {
-  event.target.value
-    ? (event.target.style.background = 'green')
-    : (event.target.style.background = 'red');
+const fieldsToValidate = [
+  {
+    input: form.querySelector('input[type="text"]'),
+    message: 'Name is required.',
+  },
+  {
+    input: form.querySelector('input[type="email"]'),
+    message: 'Email is required.',
+  },
+  {
+    input: form.querySelector('input[type="tel"]'),
+    message: 'Phone is required.',
+  },
+  {
+    input: form.querySelector('.leave__textarea'),
+    message: 'Comment is required.',
+  },
+];
+
+function showError(input, message) {
+  const errorElement = input.nextElementSibling;
+  input.classList.add('error');
+  errorElement.textContent = message;
+  errorElement.style.display = 'block';
 }
 
-function onBlur(event) {
-  event.target.value
-    ? (event.target.style.background = 'green')
-    : (event.target.style.background = 'red');
+function hideError(input) {
+  const errorElement = input.nextElementSibling;
+  input.classList.remove('error');
+  errorElement.textContent = '';
+  errorElement.style.display = 'none';
 }
 
-if (form) {
-  document.querySelector('.leave__form').addEventListener('submit', event => {
-    event.preventDefault();
-    event.currentTarget.reset();
+function validateForm() {
+  let hasErrors = false;
+
+  fieldsToValidate.forEach(({ input, message }) => {
+    if (input.value.trim() === '') {
+      showError(input, message);
+      hasErrors = true;
+    }
   });
 
-  // [...form.elements].forEach(el => {
-  //   if (el.name) {
-  //     el.addEventListener('input', onFocus);
-  //     el.addEventListener('focus', onFocus);
-  //     el.addEventListener('blur', onBlur);
-  //   }
-  // });
+  return !hasErrors;
 }
+
+function validateOnBlur(event) {
+  switch (event.target.type) {
+    case 'text':
+    case 'tel':
+    case 'email':
+      if (event.target.value.trim() === '') {
+        showError(event.target, 'This field is required.');
+      }
+      break;
+    default:
+      if (event.target.classList.contains('leave__textarea')) {
+        if (event.target.value.trim() === '') {
+          showError(event.target, 'This field is required.');
+        }
+      }
+      break;
+  }
+}
+
+function validateOnFocus(event) {
+  switch (event.target.type) {
+    case 'text':
+    case 'tel':
+    case 'email':
+      hideError(event.target);
+      break;
+    default:
+      if (event.target.classList.contains('leave__textarea')) {
+        hideError(event.target);
+      }
+      break;
+  }
+}
+
+function onSubmit(event) {
+  event.preventDefault();
+
+  const hasNoErrors = validateForm();
+  if (!hasNoErrors) return;
+
+  event.currentTarget.reset();
+}
+
+form.addEventListener('focus', validateOnFocus, true);
+form.addEventListener('blur', validateOnBlur, true);
+form.addEventListener('submit', onSubmit);
