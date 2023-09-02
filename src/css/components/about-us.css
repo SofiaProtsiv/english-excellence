@@ -37,7 +37,7 @@
 
 .about-us_list__item {
   padding: 32px;
-  border-radius: 16px;
+  border-radius: 30px;
   background: var(--box-bg-color);
 
   @media (min-width: 768px) {
