@@ -78,7 +78,7 @@
   background-color: var(--accent-color);
 
   @media (min-width: 768px) {
-    padding: 16px 40px;
+    padding: 32px 40px;
   }
 
   @media (min-width: 1280px) {
