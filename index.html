@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English excellence</title>
     
-    <script type="module" crossorigin src="/english-excellence/assets/index-5b659b09.js"></script>
-    <link rel="modulepreload" crossorigin href="/english-excellence/assets/navigation-a7ba1ed5.js">
-    <link rel="stylesheet" href="/english-excellence/assets/navigation-84b13fae.css">
+    <script type="module" crossorigin src="/english-excellence/assets/index-2de304bf.js"></script>
+    <link rel="modulepreload" crossorigin href="/english-excellence/assets/navigation-48456fc3.js">
+    <link rel="stylesheet" href="/english-excellence/assets/navigation-5f901a2d.css">
   </head>
 
   <body>
@@ -247,7 +247,7 @@
       We are dedicated to providing engaging and effective English language
       courses in a supportive and stimulating learning environment
     </p>
-    
+
     <div class='about-us__wrapper'>
       <ul class='about-us_list'>
         <li class='about-us_list__item'>
@@ -268,12 +268,25 @@
       </ul>
 
       <div class='about-us__img-wrap'>
-        <img
-          srcset="/english-excellence/assets/memoji-5b720a6e.png 1x, /english-excellence/assets/memoji@2x-13df48bf.png 2x"
-          src="/english-excellence/assets/memoji-5b720a6e.png"
-          alt="memoji girl"
-          width="254"
-        />
+        <picture>
+          <source
+            srcset="
+            ../assets/img/about-us/memoji.webp 1x,
+            ../assets/img/about-us/memoji@2x.webp 2x
+          "
+            type="image/webp"
+          />
+          <source
+            srcset="../assets/img/about-us/memoji@2x.png 2x"
+            type="image/png"
+          />
+          <img
+            src="../assets/img/about-us/memoji.png"
+            alt="memoji girl"
+            width="254"
+            height="173"
+          />
+        </picture>
       </div>
     </div>
   </div>
