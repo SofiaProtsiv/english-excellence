@@ -22,10 +22,7 @@
   border: 1px solid var(--input-border-color);
   padding: 16px 18px;
   color: var(--const-primary-text-color);
-  font-family: Manrope;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   outline: none;
   transition: border-color var(--transition-time) var(--transition-effect);
@@ -42,10 +39,7 @@
   border: 1px solid var(--input-border-color);
   padding: 16px 18px;
   color: var(--const-primary-text-color);
-  font-family: Manrope;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px;
   outline: none;
   resize: none;
@@ -80,10 +74,7 @@
 
 .leave__radio-btn__label {
   color: var(--primary-text-color);
-  font-family: Manrope;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.02em;
   padding-left: 32px;
@@ -101,10 +92,7 @@
 
 .leave__btn-descr {
   color: var(--secondary-text-color);
-  font-family: Manrope;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 16px;
 }
 
@@ -115,9 +103,7 @@
   border-radius: 12px;
   background: var(--accent-color);
   color: var(--white-color);
-  font-family: Manrope;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   border: none;
@@ -141,9 +127,7 @@
 
 .leave__rb__title {
   color: var(--primary-text-color);
-  font-family: Manrope;
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.02em;
@@ -235,9 +219,7 @@
   .leave__abv-box__text-accent {
     color: var(--white-color);
     text-align: center;
-    font-family: Manrope;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -0.02em;
@@ -249,10 +231,7 @@
   .leave__abv-box__text {
     color: var(--light-text-color);
     text-align: center;
-    font-family: Manrope;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 24px;
     padding: 0 24px;
   }

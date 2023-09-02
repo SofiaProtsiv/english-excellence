@@ -9,7 +9,6 @@
   margin-bottom: clamp(36px, 10.7vw, 40px);
   font-size: 38px;
   font-size: clamp(32px, 10.14vw, 38px);
-  font-style: normal;
   font-weight: 700;
   line-height: 1.05;
 }
@@ -43,7 +42,6 @@
 
   color: var(--white-color);
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.71;
 
