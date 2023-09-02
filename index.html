@@ -6,15 +6,10 @@
     <link rel="icon" type="image/svg+xml" href="/english-excellence/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English excellence</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
     
-    <script type="module" crossorigin src="/english-excellence/assets/validation-126e6a6a.js"></script>
-    <link rel="stylesheet" href="/english-excellence/assets/validation-c974281c.css">
+    <script type="module" crossorigin src="/english-excellence/assets/index-5b659b09.js"></script>
+    <link rel="modulepreload" crossorigin href="/english-excellence/assets/navigation-a7ba1ed5.js">
+    <link rel="stylesheet" href="/english-excellence/assets/navigation-84b13fae.css">
   </head>
 
   <body>
@@ -58,7 +53,7 @@
               height="28"
               aria-label="Facebook icon"
             >
-              <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-facebook"></use>
+              <use href="/english-excellence/assets/icons-89daa439.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -75,7 +70,7 @@
               height="28"
               aria-label="Instagram icon"
             >
-              <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-instagram"></use>
+              <use href="/english-excellence/assets/icons-89daa439.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -93,7 +88,7 @@
               height="28"
               aria-label="Youtube icon"
             >
-              <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-youtube"></use>
+              <use href="/english-excellence/assets/icons-89daa439.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -103,7 +98,7 @@
     <!-- start mobile/tablet elements -->
     <div class="header__btn" data-modal-open type="button">
       <svg class="open__icon" width="32" height="32">
-        <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-nav-tablet"></use>
+        <use href="/english-excellence/assets/icons-89daa439.svg#icon-nav-tablet"></use>
       </svg>
     </div>
   </div>
@@ -176,7 +171,7 @@
             height="28"
             aria-label="Facebook icon"
           >
-            <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-facebook"></use>
+            <use href="/english-excellence/assets/icons-89daa439.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
@@ -193,7 +188,7 @@
             height="28"
             aria-label="Instagram icon"
           >
-            <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-instagram"></use>
+            <use href="/english-excellence/assets/icons-89daa439.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
@@ -211,7 +206,7 @@
             height="28"
             aria-label="Youtube icon"
           >
-            <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-youtube"></use>
+            <use href="/english-excellence/assets/icons-89daa439.svg#icon-youtube"></use>
           </svg>
         </a>
       </li>
@@ -237,7 +232,7 @@
           height="20"
           aria-label="scroll down icon"
         >
-          <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-arrow"></use>
+          <use href="/english-excellence/assets/icons-89daa439.svg#icon-arrow"></use>
         </svg>
       </a>
     </div>
@@ -290,7 +285,7 @@
       Our <span class="section__title--span">lessons</span>
     </h2>
     <p class="section__subtitle section__subtitle--center">
-      Our lessonss are carefully structured and interactive, designed to promote
+      Our lessons are carefully structured and interactive, designed to promote
       rapid language acquisition through practical tasks and real-world
       scenarios
     </p>
@@ -527,51 +522,41 @@
         </p>
       </div>
       <form class="leave__form" method="post">
-        <input class="leave__input" type="text" placeholder="Name" required />
-        <input class="leave__input" type="email" placeholder="Email" required />
-        <input class="leave__input" type="tel" placeholder="Phone" required />
-        <textarea
-          class="leave__textarea"
-          name="comment"
-          id="comment"
-          placeholder="Comment"
-        ></textarea>
+        <div class="leave__form__group">
+          <input class="leave__input" type="text" placeholder="Name" />
+          <div class="error-message"></div>
+        </div>
+        <div class="leave__form__group">
+          <input class="leave__input" type="email" placeholder="Email" />
+          <div class="error-message"></div>
+        </div>
+        <div class="leave__form__group">
+          <input class="leave__input" type="tel" placeholder="Phone" />
+          <div class="error-message"></div>
+        </div>
+        <div class="leave__form__group">
+          <textarea
+            class="leave__textarea"
+            name="comment"
+            id="comment"
+            placeholder="Comment"
+          ></textarea>
+          <div class="error-message"></div>
+        </div>
         <fieldset class="leave__rb__fieldset">
           <legend class="leave__rb__title">Choose a teacher</legend>
           <div class="leave__rb-box">
-            <div>
-              <input
-                class="leave__radio-btn__input visually-hidden"
-                type="radio"
-                name="teacher"
-                id="maria"
-                value="maria"
-                checked
-              />
-              <label class="leave__radio-btn__label" for="maria">
-                <span class="leave__radio-btn__label__span">
-                  <div class="leave__radio-btn__icon-uncheck"></div>
-                  <svg
-                    class="leave__radio-btn__icon-check"
-                    width="20"
-                    height="20"
-                  >
-                    <use href="/english-excellence/assets/icons-cc5e025f.svg#radio-btn"></use>
-                  </svg>
-                </span>
-                Maria
-              </label>
-            </div>
             <div class="leave__rb-box">
               <div>
                 <input
                   class="leave__radio-btn__input visually-hidden"
                   type="radio"
                   name="teacher"
-                  id="artem"
-                  value="artem"
+                  id="maria"
+                  value="maria"
+                  checked
                 />
-                <label class="leave__radio-btn__label" for="artem">
+                <label class="leave__radio-btn__label" for="maria">
                   <span class="leave__radio-btn__label__span">
                     <div class="leave__radio-btn__icon-uncheck"></div>
                     <svg
@@ -579,59 +564,83 @@
                       width="20"
                       height="20"
                     >
-                      <use href="/english-excellence/assets/icons-cc5e025f.svg#radio-btn"></use>
+                      <use href="/english-excellence/assets/icons-89daa439.svg#radio-btn"></use>
                     </svg>
                   </span>
-                  Artem
+                  Maria
                 </label>
               </div>
-            </div>
-            <div class="leave__rb-box">
-              <div>
-                <input
-                  class="leave__radio-btn__input visually-hidden"
-                  type="radio"
-                  name="teacher"
-                  id="ilona"
-                  value="ilona"
-                />
-                <label class="leave__radio-btn__label" for="ilona">
-                  <span class="leave__radio-btn__label__span">
-                    <div class="leave__radio-btn__icon-uncheck"></div>
-                    <svg
-                      class="leave__radio-btn__icon-check"
-                      width="20"
-                      height="20"
-                    >
-                      <use href="/english-excellence/assets/icons-cc5e025f.svg#radio-btn"></use>
-                    </svg>
-                  </span>
-                  Ilona
-                </label>
+              <div class="leave__rb-box">
+                <div>
+                  <input
+                    class="leave__radio-btn__input visually-hidden"
+                    type="radio"
+                    name="teacher"
+                    id="artem"
+                    value="artem"
+                  />
+                  <label class="leave__radio-btn__label" for="artem">
+                    <span class="leave__radio-btn__label__span">
+                      <div class="leave__radio-btn__icon-uncheck"></div>
+                      <svg
+                        class="leave__radio-btn__icon-check"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="/english-excellence/assets/icons-89daa439.svg#radio-btn"></use>
+                      </svg>
+                    </span>
+                    Artem
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="leave__rb-box">
-              <div>
-                <input
-                  class="leave__radio-btn__input visually-hidden"
-                  type="radio"
-                  name="teacher"
-                  id="volodymyr"
-                  value="volodymyr"
-                />
-                <label class="leave__radio-btn__label" for="volodymyr">
-                  <span class="leave__radio-btn__label__span">
-                    <div class="leave__radio-btn__icon-uncheck"></div>
-                    <svg
-                      class="leave__radio-btn__icon-check"
-                      width="20"
-                      height="20"
-                    >
-                      <use href="/english-excellence/assets/icons-cc5e025f.svg#radio-btn"></use>
-                    </svg>
-                  </span>
-                  Volodymyr
-                </label>
+              <div class="leave__rb-box">
+                <div>
+                  <input
+                    class="leave__radio-btn__input visually-hidden"
+                    type="radio"
+                    name="teacher"
+                    id="ilona"
+                    value="ilona"
+                  />
+                  <label class="leave__radio-btn__label" for="ilona">
+                    <span class="leave__radio-btn__label__span">
+                      <div class="leave__radio-btn__icon-uncheck"></div>
+                      <svg
+                        class="leave__radio-btn__icon-check"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="/english-excellence/assets/icons-89daa439.svg#radio-btn"></use>
+                      </svg>
+                    </span>
+                    Ilona
+                  </label>
+                </div>
+              </div>
+              <div class="leave__rb-box">
+                <div>
+                  <input
+                    class="leave__radio-btn__input visually-hidden"
+                    type="radio"
+                    name="teacher"
+                    id="volodymyr"
+                    value="volodymyr"
+                  />
+                  <label class="leave__radio-btn__label" for="volodymyr">
+                    <span class="leave__radio-btn__label__span">
+                      <div class="leave__radio-btn__icon-uncheck"></div>
+                      <svg
+                        class="leave__radio-btn__icon-check"
+                        width="20"
+                        height="20"
+                      >
+                        <use href="/english-excellence/assets/icons-89daa439.svg#radio-btn"></use>
+                      </svg>
+                    </span>
+                    Volodymyr
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -803,7 +812,7 @@
               height="28"
               aria-label="Facebook icon"
             >
-              <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-facebook"></use>
+              <use href="/english-excellence/assets/icons-89daa439.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -820,7 +829,7 @@
               height="28"
               aria-label="Instagram icon"
             >
-              <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-instagram"></use>
+              <use href="/english-excellence/assets/icons-89daa439.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -838,7 +847,7 @@
               height="28"
               aria-label="Youtube icon"
             >
-              <use href="/english-excellence/assets/icons-cc5e025f.svg#icon-youtube"></use>
+              <use href="/english-excellence/assets/icons-89daa439.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -876,6 +885,7 @@
 </a>
 
 
+    
     
   </body>
 </html>
