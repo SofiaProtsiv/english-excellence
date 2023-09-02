@@ -42,6 +42,7 @@
 
   @media (min-width: 768px) {
     width: 336px;
+    border-radius: 30px;
   }
 
   @media (min-width: 1280px) {
@@ -73,9 +74,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 40px;
+  padding: 50px 40px;
   border-radius: 16px;
   background-color: var(--accent-color);
+
+  @media (min-width: 768px) {
+    padding: 32px 40px;
+    border-radius: 30px;
+  }
 
   @media (min-width: 1280px) {
     padding: 90px 27px;
