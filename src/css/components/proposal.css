@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .proposal .container {
-    width: 335px;
+    width: clamp(278px, calc(100%-40px), 335px);
     min-height: 737px;
     padding-top: 40px;
     padding-bottom: 64px;
@@ -9,6 +9,8 @@
   }
 
   .proposal__wrapper-full {
+    display: flex;
+    flex-direction: column;
     position: relative;
     border-radius: 16px;
     background-image: linear-gradient(
@@ -24,7 +26,7 @@
     font-size: 38px;
     font-weight: 700;
     line-height: 1.05;
-    width: 295px;
+    width: clamp(250px, calc(100%-40px), 295px);
     letter-spacing: 0em;
     padding: 0;
   }
@@ -34,8 +36,8 @@
   }
 
   .proposal__wrapper-full .proposal__first-extrabg-wrapper {
-    width: 295px;
-    height: 408px;
+    width: clamp(250px, calc(100%-40px), 295px);
+    min-height: 408px;
     position: relative;
     background-color: var(--white-color);
     border-radius: 16px;
