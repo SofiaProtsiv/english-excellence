@@ -1,15 +1,10 @@
-.reviews__list {
-  display: flex;
-  gap: 32px;
-  overflow-block: hidden;
-}
-
 .reviews__item {
-  display: flex;
+  display: flex!important;
   flex-direction: column;
   align-items: center;
   gap: 32px;
   width: 100%;
+  height: unset!important;
   background-color: var(--box-bg-color);
   padding: 32px 16px 40px 16px;
   border-radius: 30px;
@@ -21,22 +16,6 @@
     gap: 20px;
   }
 }
-
-/* .reviews__item:nth-child(3) {
-  @media (width < 1280px) {
-    display: none;
-  }
-
-  @media (width < 768px) {
-    display: none;
-  }
-}
-
-.reviews__item:nth-child(2) {
-  @media (width < 768px) {
-    display: none;
-  }
-} */
 
 .reviews__avatar {
   display: flex;
