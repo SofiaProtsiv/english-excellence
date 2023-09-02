@@ -6,7 +6,7 @@
       We are dedicated to providing engaging and effective English language
       courses in a supportive and stimulating learning environment
     </p>
-    
+
     <div class='about-us__wrapper'>
       <ul class='about-us_list'>
         <li class='about-us_list__item'>
@@ -27,15 +27,25 @@
       </ul>
 
       <div class='about-us__img-wrap'>
-        <img
-          srcset="
-            /assets/img/about-us/memoji.png    1x,
-            /assets/img/about-us/memoji@2x.png 2x
+        <picture>
+          <source
+            srcset="
+            ../assets/img/about-us/memoji.webp 1x,
+            ../assets/img/about-us/memoji@2x.webp 2x
           "
-          src="/assets/img/about-us/memoji.png"
-          alt="memoji girl"
-          width="254"
-        />
+            type="image/webp"
+          />
+          <source
+            srcset="../assets/img/about-us/memoji@2x.png 2x"
+            type="image/png"
+          />
+          <img
+            src="../assets/img/about-us/memoji.png"
+            alt="memoji girl"
+            width="254"
+            height="173"
+          />
+        </picture>
       </div>
     </div>
   </div>
