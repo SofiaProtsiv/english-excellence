@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team__cards-container {
     max-width: 375px;
     width: 100%;
@@ -93,7 +93,7 @@
 .team__cards-container .team__cards__card-container .card .more:after {
   transform: rotate(90deg);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team__cards-container .team__cards__card-container .card .more {
     padding: 10px;
     top: 10px;
@@ -101,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team__cards-container .team__cards__card-container .card .more:hover {
     transform: scale(1);
     background-color: transparent;
@@ -245,7 +245,7 @@ body.dark
 .team__cards-container .team__cards__card-container:hover:before {
   box-shadow: 0px 10px 10px -10px var(--input-border-color);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team__cards-container .team__cards__card-container:hover {
     transform: translateY(0px);
   }
@@ -256,7 +256,7 @@ body.dark
 .team__cards-container .team__cards__card-container:hover .card .photo {
   transform: translateY(-5px);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team__cards-container .team__cards__card-container:hover .card .photo {
     transform: translateY(0px);
   }
@@ -273,7 +273,7 @@ body.dark
   .more:hover {
   transform: rotate(45deg) scale(1.1);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team__cards-container
     .team__cards__card-container.show-more
     .card
