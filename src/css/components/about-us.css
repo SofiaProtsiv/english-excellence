@@ -73,9 +73,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 40px;
+  padding: 50px 40px;
   border-radius: 16px;
   background-color: var(--accent-color);
+
+  @media (min-width: 768px) {
+    padding: 16px 40px;
+  }
 
   @media (min-width: 1280px) {
     padding: 90px 27px;
