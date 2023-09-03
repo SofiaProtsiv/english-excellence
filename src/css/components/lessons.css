@@ -50,7 +50,6 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.4px;
-  margin-bottom: 16px;
 }
 
 .lessons-strong--active {
@@ -65,7 +64,6 @@
   font-weight: 700;
   line-height: 1.37;
   letter-spacing: -0.64px;
-  margin-bottom: 16px;
 }
 
 .lessons-span--active {
@@ -93,6 +91,7 @@
   text-align: center;
   padding: 16px 38px;
   border-radius: 12px;
+  margin-top: 16px;
   background-color: var(--accent-color);
   transition: var(--transition-time) var(--transition-effect);
   border: none;
