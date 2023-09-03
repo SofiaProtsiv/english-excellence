@@ -8,7 +8,7 @@
   color: var(--secondary-text-color);
 }
 
-.adv-box {
+.offer-box {
   display:  none;
 }
 
@@ -231,7 +231,7 @@ position: relative;
     gap: 32px;
   }
 
-  .adv-box {
+  .offer-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -242,13 +242,13 @@ position: relative;
     background-color: var(--accent-color);
   }
 
-  .adv-box__img {
+  .offer-box__img {
     clip-path: path(
       'M0 275.673V0H493V276.982C439.005 347.087 348.961 393 247.001 393C144.408 393 53.879 346.515 0 275.673Z'
     );
   }
 
-  .adv-box__text-accent {
+  .offer-box__text-accent {
     color: var(--white-color);
     font-size: 40px;
     font-weight: 700;
@@ -256,7 +256,7 @@ position: relative;
     letter-spacing: -0.02em;
   }
 
-  .adv-box__text {
+  .offer-box__text {
     color: var(--light-text-color);
     font-size: 16px;
     line-height: 24px;
