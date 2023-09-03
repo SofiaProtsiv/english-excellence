@@ -8,12 +8,18 @@
   color: var(--secondary-text-color);
 }
 
-.leave__adv-box {
+.adv-box {
   display: none;
 }
 
-.leave__form__group {
-  margin-bottom: 18px;
+.form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form__list > li:last-of-type {
+  margin-bottom: 20px;
 }
 
 .leave__input {
@@ -61,6 +67,7 @@
 }
 
 .leave__radio-btn__icon-uncheck {
+  display: block;
   padding: 0;
   width: 14px;
   height: 14px;
@@ -116,28 +123,30 @@
   background-color: var(--dark-hover-color);
 }
 
-.leave__rb__fieldset {
+.leave__rb-fieldset {
   display: flex;
   flex-direction: column;
   gap: 14px;
   padding: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
+  line-height: 1.15;
   border: none;
 }
 
-.leave__rb__title {
+.leave__rb-title {
   color: var(--primary-text-color);
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.02em;
-  margin-bottom: 14px;
+  /* margin-bottom: 14px; */
 }
 
 .leave__rb-box {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -155,13 +164,17 @@
     padding: 0 102px;
   }
 
+  .form__list > li:last-of-type {
+    margin-bottom: 32px;
+  }
+
   .leave__btn {
     padding: 16px 0;
     font-size: 18px;
     line-height: 28px;
   }
 
-  .leave__btn__descr {
+  .leave__btn-descr {
     font-size: 14px;
     line-height: 24px;
   }
@@ -173,7 +186,6 @@
 
   .leave__textarea {
     height: 104px;
-    margin-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -195,45 +207,58 @@
     top: 3px;
   }
 
-  .leave__rb__fieldset {
-    gap: 16px;
+  .leave__rb-fieldset {
     margin-bottom: 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .leave__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-grow: 1;
+
+    padding: 20px 20px 40px;
+    text-align: center;
+  }
+
   .leave__content-group {
     display: flex;
-    gap: 24px;
+    gap: 32px;
   }
 
-  .leave__adv-box {
-    display: block;
+  .adv-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    flex-basis: 492px;
     overflow: hidden;
-    flex-basis: calc((100% - 24px) / 2);
     border-radius: 30px;
     background-color: var(--accent-color);
-    padding-bottom: 40px;
   }
 
-  .leave__abv-box__text-accent {
+  .adv-box__img {
+    clip-path: path(
+      'M0 275.673V0H493V276.982C439.005 347.087 348.961 393 247.001 393C144.408 393 53.879 346.515 0 275.673Z'
+    );
+  }
+
+  .adv-box__text-accent {
     color: var(--white-color);
-    text-align: center;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -0.02em;
-    margin-top: auto;
-    margin-bottom: 8px;
-    padding-top: 12px;
   }
 
-  .leave__abv-box__text {
+  .adv-box__text {
     color: var(--light-text-color);
-    text-align: center;
     font-size: 16px;
     line-height: 24px;
-    padding: 0 24px;
   }
 
   .leave__form {
@@ -256,39 +281,14 @@
     line-height: 28px;
   }
 
-  .leave__btn__descr {
-    font-size: 14px;
-    line-height: 24px;
-  }
-
   .leave__input {
     font-size: 16px;
     line-height: 24px;
   }
 
   .leave__textarea {
-    height: 129px;
-    margin-bottom: 32px;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .leave__rd-box {
-    flex-direction: row;
-    gap: 16px;
-  }
-
-  .leave__rb__title {
-    margin-bottom: 16px;
-  }
-
-  .leave__rb__fieldset {
-    gap: 16px;
-    margin-bottom: 32px;
-  }
-
-  .leave__adv-box img {
-    margin-bottom: 12px;
   }
 }
 
