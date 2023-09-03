@@ -176,9 +176,10 @@
   }
 }
 
-.link-container {
+.link-container ul {
   display: flex;
-  gap: 10px;
+  flex-direction: row;
+  gap: 18px;
 }
 
 .copyright-text,
