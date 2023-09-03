@@ -1,6 +1,6 @@
 @media screen and (max-width: 767.98px) {
   .proposal .container {
-    /* width: clamp(278px, calc(100% - 40px), 335px); */
+    width: clamp(278px, calc(100% - 40px), 335px);
     min-height: 737px;
     padding-top: 40px;
     padding-bottom: 64px;
@@ -36,7 +36,7 @@
   }
 
   .proposal__wrapper-full .proposal__first-extrabg-wrapper {
-    width: clamp(250px, calc(100% - 40px), 295px);
+    /* width: clamp(250px, calc(100% - 40px), 295px); */
     min-height: 408px;
     position: relative;
     background-color: var(--white-color);
@@ -116,6 +116,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 1.71;
+    text-align: center;
     transition: background-color var(--transition-time) var(--transition-effect);
   }
 

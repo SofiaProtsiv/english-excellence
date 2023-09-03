@@ -15,9 +15,7 @@
   color: var(--primary-text-color);
   font-family: Manrope;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   transition: var(--transition-time) var(--transition-effect);
 }
 .logo--accent {
@@ -38,7 +36,6 @@
   position: relative;
   font-family: Manrope, sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.3;
   padding: 8px 0px;

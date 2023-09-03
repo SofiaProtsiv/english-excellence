@@ -67,7 +67,6 @@ input:checked + .round::before {
   color: var(--primary-text-color);
   font-family: Manrope, sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.3;
 }
