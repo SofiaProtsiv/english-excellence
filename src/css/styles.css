@@ -1,15 +1,10 @@
 /* Fonts */
 @import url('/assets/fonts/fonts.css');
-
 /* Base */
 @import url('base/reset.css');
 @import url('base/normalize.css');
-
 /* Utils */
 @import url('utils/variables.css');
-@import url('utils/section.css');
-@import url('utils/container.css');
-@import url('utils/title.css');
 
 /* Components */
 @import url('components/hero.css');
@@ -27,6 +22,11 @@
 /* Layouts */
 @import url('layout/header.css');
 @import url('layout/footer.css');
+
+/* Sections & Containers */
+@import url('utils/section.css');
+@import url('utils/container.css');
+@import url('utils/title.css');
 @import url('utils/logo.css');
 
 :root {
