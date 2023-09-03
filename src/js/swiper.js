@@ -1,22 +1,32 @@
 import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
-
-const breakpoints = {
-  // when window width is >= 768px
-  320: {
-    slidesPerView: 1,
-  },
-  // when window width is >= 768px
-  768: {
-    slidesPerView: 2,
-  },
-  // when window width is >= 1280px
-  1280: {
-    slidesPerView: 3,
-  },
-};
+import 'swiper/css/pagination';
 
 const swiper = new Swiper('.swiper', {
+  modules: [Navigation, Pagination],
   spaceBetween: 32,
-  breakpoints
+  simulateTouch: true,
+  effect: 'slide',
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+  },
 });

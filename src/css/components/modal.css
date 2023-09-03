@@ -9,6 +9,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  transition: opacity var(--transition-effect),var(--transition-time);
 }
 
 .backdrop.is-hidden {
