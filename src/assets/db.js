@@ -63,8 +63,7 @@ export const team = [
     name: 'Artur Didur',
     role: 'Front-End Developer',
     desc: '',
-    photo:
-      'https://vyshnevyi-partners.com/wp-content/uploads/2016/12/no-avatar.png',
+    photo: 'https://avatars.githubusercontent.com/u/114071335?v=4',
     email: 'mailto:didur.art@gmail.com',
     linkedin: '',
     github: 'https://github.com/Art-of-D',

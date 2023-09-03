@@ -8,7 +8,7 @@
 .team__cards-container {
   cursor: default;
 }
-/* Card */
+
 .team__cards-wrapper {
   display: flex;
   flex-wrap: wrap;
