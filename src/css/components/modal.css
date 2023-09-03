@@ -9,7 +9,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  transition: opacity var(--transition-effect),var(--transition-time);
+  transition: opacity var(--transition-effect), var(--transition-time);
 }
 
 .backdrop.is-hidden {
@@ -34,14 +34,17 @@
   transform: translateX(0%);
   transition: transform var(--transition-effect), var(--transition-time);
 }
-.backdrop.is-hidden .modal{
-  transform: translateX(100%);
-}
+
 @media screen and (max-width: 767.98px) {
   .modal {
     width: 65%;
   }
 }
+
+.backdrop.is-hidden .modal {
+  transform: translateX(100%);
+}
+
 .modal__nav__list {
   display: flex;
   flex-direction: column;
@@ -74,7 +77,7 @@
 
   border: 1px solid var(--white-color);
 }
-.modal__social__link:hover{
+.modal__social__link:hover {
   opacity: 0.5;
 }
 
