@@ -96,7 +96,7 @@
 }
 
 /* The second column containing menu items */
-.footer__menu__list__item + .footer__menu__list__item {
+.footer__menu__list__item+.footer__menu__list__item {
   margin-top: 20px;
 }
 
@@ -187,7 +187,10 @@
 .privacy-link {
   position: relative;
   padding: 8px 0;
-  margin: 5px;
+}
+
+.copyright-text {
+  margin-bottom: 5px;
 }
 
 .our-team-link:after,
