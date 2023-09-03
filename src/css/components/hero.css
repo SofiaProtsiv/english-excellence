@@ -77,7 +77,8 @@
 
 .hero__scroll--down {
   fill: var(--accent-color);
-  transition: fill transform var(--transition-time) var(--transition-effect);
+  transition: fill var(--transition-time) var(--transition-effect),
+    transform var(--transition-time) var(--transition-effect);
 }
 
 .hero__scroll:hover,
