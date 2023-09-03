@@ -16,12 +16,12 @@
 }
 
 .reviews__item {
-  display: flex!important;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   gap: 32px;
   width: 100%;
-  height: unset!important;
+  height: unset !important;
   background-color: var(--box-bg-color);
   padding: 32px 16px 40px 16px;
   border-radius: 30px;
@@ -75,14 +75,18 @@
   }
 }
 
-.swiper{
+.swiper {
   overflow-y: visible !important;
 }
-.swiper-pagination{
-      bottom: -10% !important;
+.swiper-pagination {
+  bottom: -10% !important;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--accent-color) !important;
   width: 12px;
-    height: 12px;
+  height: 12px;
+}
+
+.review-avatar_image {
+  border-radius: 50%;
 }
