@@ -1,6 +1,6 @@
 @media screen and (max-width: 767.98px) {
   .proposal .container {
-    width: clamp(278px, calc(100% - 40px), 335px);
+    /* width: clamp(278px, calc(100% - 40px), 335px); */
     min-height: 737px;
     padding-top: 40px;
     padding-bottom: 64px;
