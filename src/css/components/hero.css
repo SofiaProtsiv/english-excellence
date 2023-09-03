@@ -13,6 +13,22 @@
   line-height: 1.05;
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    display: block;
+    max-width: 488px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    max-width: 564px;
+  }
+}
+
 .hero__title--accent {
   color: var(--highlight-color);
 }
@@ -29,6 +45,25 @@
   padding-inline: clamp(16px, 5.334vw, 20px);
   padding-bottom: 72px;
   margin-inline: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 704px;
+    height: 857px;
+    padding: 260px 32px 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    width: 1152px;
+    height: 629px;
+    padding: 0 64px;
+    align-items: center;
+  }
 }
 
 .link__leave-an-application {
@@ -57,6 +92,16 @@
   background-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .link__leave-an-application {
+    width: 306px;
+    height: 60px;
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
 .hero__scroll {
   display: flex;
   justify-content: center;
@@ -75,16 +120,25 @@
   transition: background-color var(--transition-time) var(--transition-effect);
 }
 
-.hero__scroll--down {
-  fill: var(--accent-color);
-  transition: fill var(--transition-time) var(--transition-effect),
-    transform var(--transition-time) var(--transition-effect);
-}
-
 .hero__scroll:hover,
 .hero__scroll:focus {
   transform: translateY(1px);
   background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__scroll {
+    width: 48px;
+    height: 48px;
+    bottom: 32px;
+    right: 32px;
+  }
+}
+
+.hero__scroll--down {
+  fill: var(--accent-color);
+  transition: fill var(--transition-time) var(--transition-effect),
+    transform var(--transition-time) var(--transition-effect);
 }
 
 .hero__scroll:hover .hero__scroll--down,
@@ -123,42 +177,6 @@
 /* tablet 1x */
 
 @media screen and (min-width: 768px) {
-  .hero__container {
-    width: 704px;
-    height: 857px;
-    padding: 260px 32px 0;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .hero__title {
-    display: block;
-    max-width: 488px;
-    margin-bottom: 32px;
-    font-size: 60px;
-    line-height: 1.17;
-  }
-
-  .link__leave-an-application {
-    width: 306px;
-    height: 60px;
-    color: var(--white-color);
-    font-size: 18px;
-    line-height: 1.56;
-  }
-
-  .hero__scroll {
-    width: 48px;
-    height: 48px;
-    bottom: 32px;
-    right: 32px;
-  }
-
-  .hero__scroll--down {
-    width: 24px;
-    height: 24px;
-  }
-
   .hero__bg-image {
     background: linear-gradient(
         57deg,
@@ -189,17 +207,6 @@
 /* desktop 1x */
 
 @media screen and (min-width: 1280px) {
-  .hero__container {
-    width: 1152px;
-    height: 629px;
-    padding: 0 64px;
-    align-items: center;
-  }
-
-  .hero__title {
-    max-width: 564px;
-  }
-
   .hero__bg-image {
     background: linear-gradient(
         57deg,

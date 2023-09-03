@@ -1,23 +1,23 @@
 .lessons__menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 32px;
 }
 
-@media (max-width: 1279.98px) {
+@media (min-width: 768px) {
   .lessons__menu {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 1280px) {
   .lessons__menu {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.lessons__items {
-  padding: 32px;
+.lessons__item {
+  padding: 32px 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -25,19 +25,19 @@
   border: 1px solid var(--accent-color);
 }
 
-@media (max-width: 1279.98px) {
-  .lessons__items {
+@media (min-width: 768px) {
+  .lessons__item {
     padding: 32px 16px;
   }
 }
 
-@media (max-width: 767.98px) {
-  .lessons__items {
-    padding: 32px 20px;
+@media (min-width: 1280px) {
+  .lessons__item {
+    padding: 32px;
   }
 }
 
-.lessons__items--active {
+.lessons__item--active {
   background-color: var(--accent-color);
   border: none;
 }
