@@ -23,7 +23,7 @@
 
   .proposal__wrapper-full .proposal__header-sec {
     color: var(--white-color);
-    font-size: 38px;
+    font-size: clamp(32px, 10.14vw, 38px);
     font-weight: 700;
     line-height: 1.05;
     width: clamp(240px, calc(100vw - 40px), 295px);
